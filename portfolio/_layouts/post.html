@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body dark="1">
+    {%- include navbar.html -%}
+    <article class="fluid grid post">
+        <section class="transparent">
+            {% if page.image %}
+            <img src="{{ page.image | relative_url }}" />
+            {% endif %}
+            <h4>{{ page.title }}</h4>
+            {% if page.platform %}
+            <blockquote id="platforms">
+                {%- for item in page.platform -%}
+                {% if item == "windows" %}
+                {% fa_svg fab.fa-windows %}
+                {% endif %}
+                {% if item == "linux" %}
+                {% fa_svg fab.fa-linux %}
+                {% endif %}
+                {% if item == "mac" %}
+                {% fa_svg fab.fa-apple %}
+                {% endif %}
+                {% if item == "web" %}
+                {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                {% endif %}
+                {% if item == "android" %}
+                {% fa_svg fab.fa-android %}
+                {% endif %}
+                {%- endfor -%}
+            </blockquote>
+            {% endif %}
+            {% if page.state != "final" %}
+            <span><b>{{ page.state }}</b></span>
+            {% endif %}
+            <ul>
+                {% if page.download %}
+                <li class="bi">
+                    <a href="{{ page.download }}">
+                        {% fa_svg fas.fa-download %} Download
+                        {% if page.version %}
+                        (<b>v{{ page.version }}</b>)
+                        {% endif %}
+                    </a>
+                </li>
+                {% endif %}
+                {% if page.website %}
+                <li class="bi">
+                    <a href="{{ page.website }}">
+                        {% fa_svg fas.fa-globe %} Website
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </section>
+        <section class="transparent">
+            {% if page.trailer %}
+            <div id="trailer">
+                {% youtube page.trailer %}
+            </div>
+            {% endif %}
+            <h4>Description</h4>
+            {{ content }}
+        </section>
+        <section>
+            <h4>Initial release</h4>
+            <p>{{ page.date | date: '%m/%d/%Y' }}</p>
+            {% if page.latestUpdate %}
+                <h4>Latest update</h4>
+                <p>{{ page.latestUpdate }}</p>
+            {% endif %}
+            {% if page.language %}
+                <h4>Languages</h4>
+                {% for item in page.language %}
+                    <p>{{ item }}</p>
+                {% endfor %}
+            {% endif %}
+            {% if page.requeriments %}
+                <h4>Requeriments</h4>
+                {% for item in page.requeriments %}
+                    <p>{{ item }}</p>
+                {% endfor %}
+            {% endif %}
+        </section>
+    </article>
+
+    {%- include footer.html -%}
+</body>
+
+</html>

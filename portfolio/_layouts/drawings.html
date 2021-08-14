@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body dark="1">
+    {%- include navbar.html -%}
+    <article>
+        <section class="transparent">
+            <h3 class="drawings-title">{% fa_svg fas.fa-paint-brush %} My drawings</h3>
+            <div class="drawings-posting">
+                {%- for picture in site.data.drawings -%}
+                    <a href="{{ picture.link }}" style="width: {{ picture.width }}px; height: {{ picture.height }}px;" target="_blank">
+                        <img src="{{ picture.url | relative_url }}" alt="{{ picture.name }}" title="{{ picture.name }}">
+                    </a>
+                {%- endfor -%}
+            </div>
+        </section>
+    </article>
+    {%- include footer.html -%}
+</body>
+</html>

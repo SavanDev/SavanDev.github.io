@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body dark="1">
+	{%- include navbar.html -%}
+	<article>
+		<p class="alert-warning">This site is under development, so many things may change in the future.</p>
+	</article>
+	<article class="grid">
+		<section id="logo" class="transparent">
+			<img src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
+			<div id="lastProjects">
+				<p class="alert-primary">Latest release: <b>{{ page.latestRelease }}</b></p>
+				<p class="alert-danger">Work in progress: <b>{{ page.wip }}</b></p>
+			</div>
+		</section>
+		<section id="lateralInfo" class="transparent">
+			<h3>Mini bio</h3>
+			{{ content }}
+			<h3>My PC</h3>
+			<p><b>OS:</b> {{ page.os }}</p>
+			<p><b>CPU:</b> {{ page.cpu }}</p>
+			<p><b>GPU:</b> {{ page.gpu }}</p>
+			<p><b>RAM:</b> {{ page.ram }}</p>
+			<p><b>Storage:</b> {{ page.storage }}</p>
+		</section>
+	</article>
+	<article class="color-dark">
+		<h3>My Projects</h3>
+		<section class="center">
+			{%- for category in site.categories -%}
+				<div class="grid-apps">
+					{%- for page in category[1] -%}
+						<a href="{{ page.url | relative_url }}">
+							<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+						</a>
+					{%- endfor -%}
+				</div>
+			{%- endfor -%}
+		</section>
+	</article>
+	{%- include footer.html -%}
+</body>
+
+</html>

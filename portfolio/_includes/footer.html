@@ -1,0 +1,17 @@
+<footer>
+    <p>SavanDev - 2016 / {{ site.time | date: '%Y' }}</p>
+    <ol>
+        {% if site.github %}
+            <li><a href="https://github.com/{{ site.github }}" target="_blank">{% fa_svg fab.fa-github %}GitHub</a></li>
+        {% endif %}
+        {% if site.twitter %}
+            <li><a href="https://twitter.com/{{ site.twitter:username }}" target="_blank">{% fa_svg fab.fa-twitter %} Twitter</a></li>
+        {% endif %}
+        {% if site.instagram %}
+            <li><a href="https://instagram.com/{{ site.instagram }}" target="_blank">{% fa_svg fab.fa-instagram %} Instagram</a></li>
+        {% endif %}
+    </ol>
+</footer>
+{% fa_svg_generate %}
+<script src="{{ "/assets/js/cleanify.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/index.js" | relative_url }}"></script>

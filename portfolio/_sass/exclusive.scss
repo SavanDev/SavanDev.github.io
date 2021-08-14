@@ -1,0 +1,43 @@
+.exclusive {
+    section:first-child {
+        max-width: 13rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    section:last-child {
+        max-width: 18rem;
+        min-height: 13rem;
+    }
+
+    #platforms {
+        display: inline-block;
+        width: fit-content;
+
+        #noRelease > * {
+            fill: gray;
+        }
+    }
+
+    .language {
+        background-color: var(--color-primary);
+        margin-left: .25rem;
+        padding: .5rem;
+        border-radius: 1rem;
+    }
+}
+
+#contentFrame {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+
+    iframe {
+        border-radius: 1rem;
+    }
+}
+
+.ex-description {
+    padding-top: 0;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "chesspawn-portfolio",
+  "version": "1.1.0",
+  "description": "New website project!",
+  "scripts": {
+    "start": "gulp",
+    "deploy": "gulp github"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavanDev/savandev.github.io.git"
+  },
+  "author": "SavanDev",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "cleanify-design": "latest",
+    "gh-pages": "^3.2.3"
+  },
+  "devDependencies": {
+    "@types/browser-sync": "^2.26.1",
+    "@types/gh-pages": "^3.2.0",
+    "@types/gulp": "^4.0.8",
+    "@types/gulp-typescript": "^2.13.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}

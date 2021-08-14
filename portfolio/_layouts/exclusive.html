@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body dark="1">
+    {%- include navbar.html -%}
+    <article>
+        <section id="contentFrame">
+            {% if page.contentURL %}
+            <iframe src="{{ page.contentURL }}" frameborder="0" width="{{ page.width }}" height="{{ page.height }}"></iframe>
+            {% endif %}
+        </section>
+        <article class="grid exclusive">
+            <section>
+                {% if page.image %}
+                <img src="{{ page.image | relative_url }}" />
+                {% endif %}
+            </section>
+            <section class="transparent">
+                <h4>{{ page.title }}</h4>
+                {% if page.platform %}
+                <blockquote id="platforms">
+                    {%- for item in page.platform -%}
+                    {% if item == "windows" %}
+                    {% fa_svg fab.fa-windows %}
+                    {% endif %}
+                    {% if item == "linux" %}
+                    {% fa_svg fab.fa-linux %}
+                    {% endif %}
+                    {% if item == "mac" %}
+                    {% fa_svg fab.fa-apple %}
+                    {% endif %}
+                    {% if item == "web" %}
+                    {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                    {% endif %}
+                    {% if item == "android" %}
+                    {% fa_svg fab.fa-android %}
+                    {% endif %}
+                    {%- endfor -%}
+                    {% if page.notAvailable %}
+                    <span id="noRelease">
+                        {%- for item in page.notAvailable -%}
+                        {% if item == "windows" %}
+                        {% fa_svg fab.fa-windows %}
+                        {% endif %}
+                        {% if item == "linux" %}
+                        {% fa_svg fab.fa-linux %}
+                        {% endif %}
+                        {% if item == "mac" %}
+                        {% fa_svg fab.fa-apple %}
+                        {% endif %}
+                        {% if item == "web" %}
+                        {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                        {% endif %}
+                        {% if item == "android" %}
+                        {% fa_svg fab.fa-android %}
+                        {% endif %}
+                        {%- endfor -%}
+                    </span>
+                    {% endif %}
+                </blockquote>
+                {% endif %}
+                {% if page.version %}
+                <span><b>v{{ page.version }}</b></span>
+                {% endif %}
+                <ol>
+                    {% if page.download %}
+                    <li class="bi">
+                        <a href="{{ page.download }}" target="_blank">
+                            {% fa_svg fas.fa-download %} Download
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if page.sourceCode %}
+                    <li class="bi">
+                        <a href="{{ page.sourceCode }}" target="_blank">
+                            {% fa_svg fas.fa-code %} Source code
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if page.website %}
+                    <li class="bi">
+                        <a href="{{ page.website }}" target="_blank">
+                            {% fa_svg fas.fa-globe %} Website
+                        </a>
+                    </li>
+                    {% endif %}
+                </ol>
+            </section>
+            <section>
+                <h4>Initial release</h4>
+                <p>{{ page.date | date: '%m/%d/%Y' }}</p>
+                {% if page.language %}
+                    <h4>Languages</h4>
+                    {% for item in page.language %}
+                    <span class="language">{{ item }}</span>
+                    {% endfor %}
+                {% endif %}
+            </section>
+        </article>
+        <section class="transparent ex-description">
+            {{ content }}
+        </section>
+    </article>
+    {%- include footer.html -%}
+</body>
+
+</html>

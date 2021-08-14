@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body dark="1">
+    {%- include navbar.html -%}
+    <article>
+        {%- for category in site.categories -%}
+            <section class="transparent">
+                <h3>{{ category[0] }}</h3>
+                <ul>
+                    {%- for page in category[1] -%}
+                        <li class="appsList">
+                            <a href="{{ page.url | relative_url }}">
+                                <img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
+                                <span class="appText">{{ page.title }}</span>
+                                <span class="appPlatform">
+                                    {%- for item in page.platform -%}
+                                        {% if item == "windows" %}
+                                        {% fa_svg fab.fa-windows %}
+                                        {% endif %}
+                                        {% if item == "linux" %}
+                                        {% fa_svg fab.fa-linux %}
+                                        {% endif %}
+                                        {% if item == "mac" %}
+                                        {% fa_svg fab.fa-apple %}
+                                        {% endif %}
+                                        {% if item == "web" %}
+                                        {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                                        {% endif %}
+                                        {% if item == "android" %}
+                                        {% fa_svg fab.fa-android %}
+                                        {% endif %}
+                                    {%- endfor -%}
+                                </span>
+                            </a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </section>
+        {%- endfor -%}
+    </article>
+    {%- include footer.html -%}
+</body>
+</html>
