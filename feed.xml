@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://savandev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://savandev.github.io/" rel="alternate" type="text/html" /><updated>2021-08-14T20:19:20-03:00</updated><id>https://savandev.github.io/feed.xml</id><title type="html">SavanDev</title><author><name>SavanDev</name></author><entry><title type="html">ColorLess</title><link href="https://savandev.github.io/games/2021/colorless/" rel="alternate" type="text/html" title="ColorLess" /><published>2021-06-09T00:00:00-03:00</published><updated>2021-06-09T00:00:00-03:00</updated><id>https://savandev.github.io/games/2021/colorless</id><content type="html" xml:base="https://savandev.github.io/games/2021/colorless/">&lt;blockquote&gt;
+  &lt;p&gt;Game made for &lt;a href=&quot;https://itch.io/jam/mejorando-ando-mayo2021&quot;&gt;#MejorandoAndo&lt;/a&gt; of May&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this game I wanted to express how I have felt these last few days, while trying to improve with HaxeFlixel.&lt;/p&gt;
+
+&lt;p&gt;Its average duration should not exceed 5-7 minutes, but it can be extended when trying to achieve the true ending.&lt;/p&gt;
+
+&lt;h4 id=&quot;controls&quot;&gt;Controls&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Left/Right Arrow&lt;/strong&gt; - Move&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Up Arrow&lt;/strong&gt; - Jump&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Contains music ©2021 &lt;a href=&quot;https://joshua-mclean.itch.io/&quot;&gt;Joshua McLean&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/&quot;&gt;CC-BY&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="haxeflixel" /><category term="platformer" /><category term="horror" /><summary type="html">Game made for #MejorandoAndo of May</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/colorless.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/colorless.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Latin American needs… GRAPE SODA!</title><link href="https://savandev.github.io/games/2021/grapesoda/" rel="alternate" type="text/html" title="Latin American needs… GRAPE SODA!" /><published>2021-04-28T00:00:00-03:00</published><updated>2021-04-28T00:00:00-03:00</updated><id>https://savandev.github.io/games/2021/grapesoda</id><content type="html" xml:base="https://savandev.github.io/games/2021/grapesoda/">&lt;blockquote&gt;
+  &lt;p&gt;The game is in a very early stage of its development and many things may change in the final version.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;context&quot;&gt;Context&lt;/h4&gt;
+
+&lt;p&gt;One day, the news reaches you that in your country your favorite drink is going to be withdrawn from the market …grape soda.&lt;/p&gt;
+
+&lt;p&gt;Your mission is to try to get the last units left in the stores before it disappears completely …but it will not come cheap.&lt;/p&gt;
+
+&lt;h4 id=&quot;controls&quot;&gt;Controls&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Left/Right Arrow&lt;/strong&gt; - Move&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Up Arrow/Z&lt;/strong&gt; - Jump&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C/Space&lt;/strong&gt; - Punch&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Enter&lt;/strong&gt; - Pause/Skip&lt;/p&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="haxeflixel" /><category term="haxe" /><category term="platformer" /><summary type="html">The game is in a very early stage of its development and many things may change in the final version.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/grapeSoda.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/grapeSoda.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Float Folder</title><link href="https://savandev.github.io/programs/2020/float-folder/" rel="alternate" type="text/html" title="Float Folder" /><published>2020-09-24T00:00:00-03:00</published><updated>2020-09-24T00:00:00-03:00</updated><id>https://savandev.github.io/programs/2020/float-folder</id><content type="html" xml:base="https://savandev.github.io/programs/2020/float-folder/">&lt;p&gt;Now you can have &lt;strong&gt;floating folders&lt;/strong&gt; (Android-like) on Windows!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/SavanDev/FloatFolder/raw/master/Demo.png&quot; class=&quot;rounded&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The program depends on the &lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=30653&quot;&gt;.NET Framework 4.5&lt;/a&gt; to work.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Programs" /><category term="windows" /><category term="netFramework" /><summary type="html">Now you can have floating folders (Android-like) on Windows!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/SavanDev/FloatFolder/raw/master/FloatFolder/Resources/FloatFolder.png" /><media:content medium="image" url="https://github.com/SavanDev/FloatFolder/raw/master/FloatFolder/Resources/FloatFolder.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Retro Shooter</title><link href="https://savandev.github.io/games/2020/retroshooter/" rel="alternate" type="text/html" title="Retro Shooter" /><published>2020-08-16T00:00:00-03:00</published><updated>2020-08-16T00:00:00-03:00</updated><id>https://savandev.github.io/games/2020/retroshooter</id><content type="html" xml:base="https://savandev.github.io/games/2020/retroshooter/">&lt;p&gt;A short arcade game where you will have to go through the different rooms eliminating the enemies that cross your path.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Made for &lt;strong&gt;#LOWREZJAM 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="unity3d" /><category term="platform" /><category term="runner" /><summary type="html">A short arcade game where you will have to go through the different rooms eliminating the enemies that cross your path.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/retroshooter.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/retroshooter.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Blue’s Adventure</title><link href="https://savandev.github.io/games/2020/blueadventure/" rel="alternate" type="text/html" title="Blue’s Adventure" /><published>2020-08-08T00:00:00-03:00</published><updated>2020-08-08T00:00:00-03:00</updated><id>https://savandev.github.io/games/2020/blueadventure</id><content type="html" xml:base="https://savandev.github.io/games/2020/blueadventure/">&lt;p&gt;The mission of this project is to create an arcade-style game where you can go through different areas (even some will be infinite!).
+Compete with your friends for both distance / score / time with the possibility of customizing the character and using different skills.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This game is in full development and two versions will be released per year (if possible).&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="unity3d" /><category term="platform" /><category term="runner" /><summary type="html">The mission of this project is to create an arcade-style game where you can go through different areas (even some will be infinite!). Compete with your friends for both distance / score / time with the possibility of customizing the character and using different skills.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/blueAdventure.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/blueAdventure.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Deal</title><link href="https://savandev.github.io/games/2020/thedeal/" rel="alternate" type="text/html" title="The Deal" /><published>2020-07-19T00:00:00-03:00</published><updated>2020-07-19T00:00:00-03:00</updated><id>https://savandev.github.io/games/2020/thedeal</id><content type="html" xml:base="https://savandev.github.io/games/2020/thedeal/">&lt;p&gt;Your goal is to enter an underground facility where you will have to visit different rooms to pay off your past debts.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A short game inspired in &lt;a href=&quot;https://store.steampowered.com/app/356670/Spookys_Jump_Scare_Mansion/&quot;&gt;Spooky’s Jump Scare Mansion&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Made for &lt;strong&gt;#todogamejam1&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="unity3d" /><category term="platform" /><summary type="html">Your goal is to enter an underground facility where you will have to visit different rooms to pay off your past debts.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/thedeal.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/thedeal.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A Bad Dream</title><link href="https://savandev.github.io/games/2020/a-bad-dream/" rel="alternate" type="text/html" title="A Bad Dream" /><published>2020-06-10T00:00:00-03:00</published><updated>2020-06-10T00:00:00-03:00</updated><id>https://savandev.github.io/games/2020/a-bad-dream</id><content type="html" xml:base="https://savandev.github.io/games/2020/a-bad-dream/">&lt;p&gt;Inspired in &lt;a href=&quot;https://gamejolt.com/games/imscared/146901&quot;&gt;Imscared&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A short game where your objective is escape from an unknown place and return to your home safely. You will cross with old friends and a new partner who will help you along the way.&lt;/p&gt;
+
+&lt;p&gt;And maybe… someone that need your help.&lt;/p&gt;
+
+&lt;p&gt;The game can try to interact with you outside of it, so check the desktop if something strange happens.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Made for the first #LuigiKidCreepypastaChallenge&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="unity3d" /><category term="horror" /><summary type="html">Inspired in Imscared.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/NewDream.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/NewDream.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cleanify Design</title><link href="https://savandev.github.io/web/2019/cleanify/" rel="alternate" type="text/html" title="Cleanify Design" /><published>2019-06-28T00:00:00-03:00</published><updated>2019-06-28T00:00:00-03:00</updated><id>https://savandev.github.io/web/2019/cleanify</id><content type="html" xml:base="https://savandev.github.io/web/2019/cleanify/">&lt;p&gt;A web framework made for personal use.&lt;/p&gt;
+
+&lt;p&gt;Inspired on &lt;strong&gt;Bootstrap&lt;/strong&gt; and &lt;strong&gt;One UI&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This site uses Cleanify Design!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;features&quot;&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML5 tags.&lt;/li&gt;
+  &lt;li&gt;Dark mode.&lt;/li&gt;
+  &lt;li&gt;Mobile support.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>SavanDev</name></author><category term="Web" /><category term="web" /><category term="framework" /><summary type="html">A web framework made for personal use.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/cleanify.svg" /><media:content medium="image" url="https://savandev.github.io/assets/img/cleanify.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cube SCP-087</title><link href="https://savandev.github.io/games/2019/cube-scp087/" rel="alternate" type="text/html" title="Cube SCP-087" /><published>2019-05-03T00:00:00-03:00</published><updated>2019-05-03T00:00:00-03:00</updated><id>https://savandev.github.io/games/2019/cube-scp087</id><content type="html" xml:base="https://savandev.github.io/games/2019/cube-scp087/">&lt;p&gt;Inspired on &lt;a href=&quot;http://www.youtube.com/watch?v=uiHQN1q8ln4&quot;&gt;Haversine’s game&lt;/a&gt; and &lt;a href=&quot;http://www.scpcbgame.com/scp-087-b.html&quot;&gt;Undertow game&lt;/a&gt; of SCP-087, also in the Minecraft cubic and pixeled style.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This version is a &lt;strong&gt;completely remake&lt;/strong&gt; of my old game with the same name, adding procedural generation for the floors and random events.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="unity3d" /><category term="horror" /><summary type="html">Inspired on Haversine’s game and Undertow game of SCP-087, also in the Minecraft cubic and pixeled style.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/cubescp.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/cubescp.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CreepyCraft (2019 Edition)</title><link href="https://savandev.github.io/games/2019/creepycraft/" rel="alternate" type="text/html" title="CreepyCraft (2019 Edition)" /><published>2019-02-09T00:00:00-03:00</published><updated>2019-02-09T00:00:00-03:00</updated><id>https://savandev.github.io/games/2019/creepycraft</id><content type="html" xml:base="https://savandev.github.io/games/2019/creepycraft/">&lt;p&gt;You will play as Steve, he wakes up in the middle of the night for a strange sound that comes from the outside of his house. When he investigate where it comes from, it is attacked and taken to an unknown place where you will have to find a way out of there and come back to house.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Can you will escape alive from this place?&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>SavanDev</name></author><category term="Games" /><category term="unity3d" /><category term="horror" /><summary type="html">You will play as Steve, he wakes up in the middle of the night for a strange sound that comes from the outside of his house. When he investigate where it comes from, it is attacked and taken to an unknown place where you will have to find a way out of there and come back to house.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://savandev.github.io/assets/img/creepycraft.png" /><media:content medium="image" url="https://savandev.github.io/assets/img/creepycraft.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
