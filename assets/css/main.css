@@ -24,15 +24,31 @@ svg { fill: #fff; }
 
 .exclusive .language { background-color: var(--color-primary); margin-left: .25rem; padding: .5rem; border-radius: 1rem; }
 
-#contentFrame { display: block; width: fit-content; margin: 1rem auto; }
+#contentFrame { display: block; width: fit-content; width: -moz-fit-content; margin: 1rem auto; }
 
 #contentFrame iframe { border-radius: 1rem; }
 
 .ex-description { padding-top: 0; }
 
+.drawings-title { background-color: var(--color-dark); padding: .5rem 1rem .1rem .5rem; border-radius: 1rem; }
+
+.drawings-title > svg { width: 48px; margin-bottom: .5rem; vertical-align: middle; margin-right: 0; height: 32px; }
+
+.drawings-posting { display: block; text-align: center; }
+
+.drawings-posting > a { display: inline-block; position: relative; border-radius: 1rem; border: 2px solid white; background-image: linear-gradient(0deg, #000064 0%, cyan 100%); margin: .25rem; overflow: hidden; transition: transform .2s; }
+
+.drawings-posting > a:hover { transform: scale(1.5); z-index: 1; border: 2px solid var(--color-primary); }
+
+.drawings-posting > a img { width: fit-content; opacity: .75; transition: all .2s; }
+
+.drawings-posting > a img:hover { opacity: 1.0; }
+
 @font-face { font-family: TechnaSans; src: url(/assets/fonts/TechnaSans-Regular.otf); }
 
-body { opacity: 0; }
+body { opacity: 1; transition-duration: 0.7s; transition-property: opacity; }
+
+body.fade { opacity: 0; }
 
 b { font-family: TechnaSans, "Roboto", "Open Sans", sans-serif; font-weight: normal; }
 
@@ -46,11 +62,11 @@ header img { width: auto; padding: 0 1.5rem; }
 
 @media screen and (min-width: 1000px) { header { padding: 2rem 0; } }
 
-#lastProjects { max-width: 500px; margin: auto; border-radius: 1rem; }
+#lastProjects { margin-bottom: 1rem; }
 
-#logo { max-width: 720px; }
+@media screen and (min-width: 1000px) { #lastProjects { display: flex; flex-wrap: wrap; } #lastProjects > * { flex-basis: 0; flex-grow: 1; } #lastProjects > :first-child { margin-right: .4rem; } #lastProjects > :last-child { margin-left: .4rem; } }
 
-#lateralInfo { max-width: 500px; margin: auto; }
+#logo { max-width: 720px; width: 100%; }
 
 .grid-apps { display: inline; }
 
@@ -60,20 +76,6 @@ header img { width: auto; padding: 0 1.5rem; }
 
 .grid-apps img:hover { transform: scale(1.25); }
 
-.drawings-title { background-color: var(--color-dark); padding: .5rem 1rem .1rem .5rem; border-radius: 1rem; }
-
-.drawings-title > svg { width: 48px; margin-bottom: .5rem; vertical-align: middle; margin-right: 0; height: 32px; }
-
-.drawings-posting { display: block; text-align: center; }
-
-.drawings-posting > a { display: inline-block; position: relative; border-radius: 1rem; background-image: linear-gradient(0deg, #000064 0%, cyan 100%); margin: .25rem; overflow: hidden; transition: transform .2s; }
-
-.drawings-posting > a:hover { transform: scale(1.5); z-index: 1; }
-
-.drawings-posting > a img { width: fit-content; opacity: .75; transition: all .2s; }
-
-.drawings-posting > a img:hover { opacity: 1.0; }
-
 .appsList img { height: 32px; margin-right: 1rem; vertical-align: middle; }
 
 .appsList .appPlatform { float: right; padding: .5rem; }
@@ -82,9 +84,10 @@ header img { width: auto; padding: 0 1.5rem; }
 
 .tiny { max-width: 180px; }
 
-/* Temporal fix */
-.alert-primary a { color: var(--color-light) !important; }
+.drawings-button { background-image: url("/assets/img/drawings/Head.png"); background-repeat: no-repeat; background-color: #0F0000; background-position-y: center; background-size: 20%; color: white; text-align: right; }
 
-.alert-primary a:hover { color: var(--color-lightgray) !important; }
+@media screen and (max-width: 600px) { .drawings-button { background-size: contain; } }
+
+.drawings-button:hover { color: white; background-image: url("/assets/img/drawings/Head-with-scarf.png"); background-color: #00000F; }
 
 /*# sourceMappingURL=main.css.map */
