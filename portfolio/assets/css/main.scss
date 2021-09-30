@@ -2,6 +2,7 @@
 ---
 @import "post";
 @import "exclusive";
+@import "drawings";
 
 @font-face {
     font-family: TechnaSans;
@@ -9,7 +10,13 @@
 }
 
 body {
-    opacity: 0;
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+
+    &.fade {
+        opacity: 0;
+    }
 }
 
 b {
@@ -46,18 +53,29 @@ header {
 }
 
 #lastProjects {
-    max-width: 500px;
-    margin: auto;
-    border-radius: 1rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        > * {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        > :first-child {
+            margin-right: .4rem;
+        }
+
+        > :last-child {
+            margin-left: .4rem;
+        }
+    }
 }
 
 #logo {
     max-width: 720px;
-}
-
-#lateralInfo {
-    max-width: 500px;
-    margin: auto;
+    width: 100%;
 }
 
 .grid-apps {
@@ -75,56 +93,6 @@ header {
             transform: scale(1.25);
         }
     }
-}
-
-.drawings-title {
-    background-color: var(--color-dark);
-    padding: .5rem 1rem .1rem .5rem;
-    border-radius: 1rem;
-
-    > svg {
-        width: 48px;
-        margin-bottom: .5rem;
-        vertical-align: middle;
-        margin-right: 0;
-        height: 32px;
-    }
-}
-
-@mixin grid-drawings($gradient1, $gradient2) {
-    display: block;
-    text-align: center;
-
-    > a {
-        display: inline-block;
-        position: relative;
-        border-radius: 1rem;
-        background-image: linear-gradient(0deg, $gradient1 0%, $gradient2 100%);
-        margin: .25rem;
-        overflow: hidden;
-
-        transition: transform .2s;
-
-        &:hover {
-            transform: scale(1.5);
-            z-index: 1;
-        }
-
-        img {
-            width: fit-content;
-            opacity: .75;
-            transition: all .2s;
-    
-            &:hover {
-                opacity: 1.0;
-                
-            }
-        }
-    }
-}
-
-.drawings-posting {
-    @include grid-drawings(rgb(0, 0, 100), rgb(0, 255, 255));
 }
 
 .appsList {
@@ -148,12 +116,22 @@ header {
     max-width: 180px;
 }
 
-/* Temporal fix */
-.alert-primary {
-    a {
-        color: var(--color-light) !important;
-        &:hover {
-            color: var(--color-lightgray) !important;
-        }
+.drawings-button {
+    background-image: url("/assets/img/drawings/Head.png");
+    background-repeat: no-repeat;
+    background-color: #0F0000;
+    background-position-y: center;
+    background-size: 20%;
+    color: white;
+    text-align: right;
+
+    @media screen and (max-width: 600px) {
+        background-size: contain;
+    }
+
+    &:hover {
+        color: white;
+        background-image: url("/assets/img/drawings/Head-with-scarf.png");
+        background-color: #00000F;
     }
 }

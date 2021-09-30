@@ -1,25 +1,24 @@
-const webVersion : string = "1.1";
-let opacityTemp : number = 0;
+const WEB_VERSION : string = "1.2";
+const TIMER : number = 300;
 
-window.addEventListener('load', () => {
-    bodyOpacity();
+document.addEventListener("DOMContentLoaded", () => {
+    window.setTimeout(() => document.body.classList.remove('fade'), TIMER);
 });
 
-async function bodyOpacity()
-{
-    if (opacityTemp < 1)
-    {
-        opacityTemp += .1;
-        document.body.style.opacity = opacityTemp.toString();
-        console.log(opacityTemp);
-        await sleep(50);
-        bodyOpacity();
-    }
-}
+document.getElementById("beta-text").innerText = `BETA ${WEB_VERSION}`;
 
-function sleep(ms: number)
-{
-    return new Promise((resolve) => setTimeout(resolve, ms));
-}
+var links = document.getElementsByTagName('a');
 
-document.getElementById("beta-text").innerText = `BETA ${webVersion}`;
+for (let i=0; i < links.length; i++)
+{
+    if (links[i].hostname !== window.location.hostname || links[i].pathname === window.location.pathname)
+        continue;
+
+    links[i].addEventListener('click', (event:any) => {
+        let anchor = event.currentTarget;
+        let listener = () => window.location = anchor.href;
+        document.body.classList.add('fade');
+        event.preventDefault();
+        window.setTimeout(listener, TIMER);
+    })
+}

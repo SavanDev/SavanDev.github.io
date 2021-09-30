@@ -6,7 +6,7 @@ tags: ["unity3d", "platform", "runner"]
 image: /assets/img/retroshooter.png
 download: https://savandev.itch.io/retro-shooter
 state: final
-platform: ["linux", "windows"]
+platform: ["windows", "linux"]
 language: "English"
 latestUpdate: 10/15/2020
 version: 1.1

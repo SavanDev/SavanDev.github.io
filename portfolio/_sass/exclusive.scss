@@ -31,6 +31,7 @@
 #contentFrame {
     display: block;
     width: fit-content;
+    width: -moz-fit-content; // fit-content not work on Firefox
     margin: 1rem auto;
 
     iframe {

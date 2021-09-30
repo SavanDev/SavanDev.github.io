@@ -3,9 +3,9 @@
 
 {%- include head.html -%}
 
-<body dark="1">
+<body class="fade" dark="1">
     {%- include navbar.html -%}
-    <article class="fluid grid post">
+    <article class="grid post">
         <section class="transparent">
             {% if page.image %}
             <img src="{{ page.image | relative_url }}" />

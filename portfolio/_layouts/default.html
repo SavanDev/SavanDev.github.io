@@ -3,22 +3,29 @@
 
 {%- include head.html -%}
 
-<body dark="1">
+<body class="fade" dark="1">
 	{%- include navbar.html -%}
 	<article>
-		<p class="alert-warning">This site is under development, so many things may change in the future.</p>
-	</article>
-	<article class="grid">
-		<section id="logo" class="transparent">
-			<img src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
-			<div id="lastProjects">
-				<p class="alert-primary">Latest release: <b>{{ page.latestRelease }}</b></p>
-				<p class="alert-danger">Work in progress: <b>{{ page.wip }}</b></p>
-			</div>
+		<section class="center transparent">
+			<img id="logo" src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
 		</section>
-		<section id="lateralInfo" class="transparent">
-			<h3>Mini bio</h3>
+		<p class="alert-warning">{% fa_svg fas.fa-exclamation-triangle %} This site is under development, so many things may change in the future {% fa_svg fas.fa-exclamation-triangle %}</p>
+		<div id="lastProjects">
+			<p class="alert-primary">Latest release: <b>{{ page.latestRelease }}</b></p>
+			<p class="alert-secondary">Work in progress: <b>{{ page.wip }}</b></p>
+		</div>
+		<a href="{{ "/drawings" | relative_url }}">
+			<section class="drawings-button">
+				<h2>My drawings</h2>
+			</section>
+		</a>
+	</article>
+	<article class="color-primary grid">
+		<section class="transparent">
+			<h3>About me</h3>
 			{{ content }}
+		</section>
+		<section class="transparent">
 			<h3>My PC</h3>
 			<p><b>OS:</b> {{ page.os }}</p>
 			<p><b>CPU:</b> {{ page.cpu }}</p>
@@ -29,15 +36,37 @@
 	</article>
 	<article class="color-dark">
 		<h3>My Projects</h3>
-		<section class="center">
+		<section class="transparent">
 			{%- for category in site.categories -%}
-				<div class="grid-apps">
+				<ul>
 					{%- for page in category[1] -%}
-						<a href="{{ page.url | relative_url }}">
-							<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-						</a>
+						<li class="appsList">
+							<a href="{{ page.url | relative_url }}">
+								<img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
+								<span class="appText">{{ page.title }}</span>
+								<span class="appPlatform">
+									{%- for item in page.platform -%}
+										{% if item == "windows" %}
+										{% fa_svg fab.fa-windows %}
+										{% endif %}
+										{% if item == "linux" %}
+										{% fa_svg fab.fa-linux %}
+										{% endif %}
+										{% if item == "mac" %}
+										{% fa_svg fab.fa-apple %}
+										{% endif %}
+										{% if item == "web" %}
+										{% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+										{% endif %}
+										{% if item == "android" %}
+										{% fa_svg fab.fa-android %}
+										{% endif %}
+									{%- endfor -%}
+								</span>
+							</a>
+						</li>
 					{%- endfor -%}
-				</div>
+				</ul>
 			{%- endfor -%}
 		</section>
 	</article>

@@ -5,12 +5,13 @@ description: Get the drink before it completely disappears from the market!
 category: Games
 tags: ["haxeflixel", "haxe", "platformer"]
 image: /assets/img/grapeSoda.png
-notAvailable: ["windows", "android", "linux"]
+notAvailable: ["windows", "linux", "mac", "android"]
 platform: ["web"]
 language: ["English"]
 version: 0.1.0-preview
 contentURL: https://savandev.github.io/FlxGrapeSoda/
 sourceCode: https://github.com/SavanDev/FlxGrapeSoda
+download: https://github.com/SavanDev/FlxGrapeSoda
 width: 640
 height: 576
 ---

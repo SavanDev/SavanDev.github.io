@@ -53,7 +53,7 @@
   height: 128
 
 - name: Twitter (120 followers!)
-  url: assets/img/drawings/Twitter120.jpg
+  url: assets/img/drawings/Twitter120.png
   link: https://twitter.com/dylnavas36/status/1386521813753155584
   width: 128
   height: 128
@@ -64,14 +64,20 @@
   width: 128
   height: 128
 
+- name: Watanoge
+  url: assets/img/drawings/Watanoge.png
+  link: https://twitter.com/dylnavas36/status/1393398701578670081
+  width: 128
+  height: 128
+
 - name: Cashier
-  url: assets/img/drawings/Cashier.jpg
+  url: assets/img/drawings/Cashier.png
   link: https://www.instagram.com/p/CPAIhACnsBb/
   width: 128
   height: 128
 
 - name: Dylan (Grape Soda)
-  url: assets/img/drawings/DylanFanta.jpg
+  url: assets/img/drawings/DylanFanta.png
   link: https://www.instagram.com/p/CPAIhACnsBb/
   width: 128
   height: 128
@@ -82,14 +88,50 @@
   width: 128
   height: 128
 
+- name: A Bad Dream (Recreation)
+  url: assets/img/drawings/NewDream.png
+  link: https://twitter.com/dylnavas36/status/1402817542213836801
+  width: 128
+  height: 128
+
 - name: Me with scarf (OC)
   url: assets/img/drawings/Head-with-scarf.png
   link: https://twitter.com/dylnavas36/status/1404311335169531904
   width: 128
   height: 128
 
+- name: Isaac with Rotten Baby
+  url: assets/img/drawings/Isaac.gif
+  link: https://twitter.com/dylnavas36/status/1407127813182869505
+  width: 128
+  height: 128
+
+- name: Spirit (OC)
+  url: assets/img/drawings/Spirit.png
+  link: https://twitter.com/dylnavas36/status/1409033092606705664
+  width: 128
+  height: 128
+
 - name: FNF (Evil Mod)
   url: assets/img/drawings/FNFv3.png
   link: https://twitter.com/dylnavas36/status/1424155139867353088
+  width: 128
+  height: 128
+
+- name: Luka (Duo)
+  url: assets/img/drawings/LukaDuo.png
+  link: https://twitter.com/dylnavas36/status/1432117458870185984
+  width: 128
+  height: 128
+
+- name: Luka (Isaac)
+  url: assets/img/drawings/LukaIsaac.png
+  link: https://twitter.com/dylnavas36/status/1432117458870185984
+  width: 128
+  height: 128
+
+- name: FNF (QT Mod)
+  url: assets/img/drawings/QT-Test.png
+  link: https://twitter.com/dylnavas36/status/1440891083135856640
   width: 128
   height: 128

@@ -57,7 +57,7 @@ function getGemsBundle()
 
 function publishOnGitHub()
 {
-    publish(siteRoot, (err) => console.log(`[Deploy]: ${err}`));
+    return publish(siteRoot, (err) => console.log(`[Deploy]: ${err}`));
 }
 
 getGemsBundle().stderr.on('data', (data) => console.log(`[GemBundle] error: ${data}`));
