@@ -57,7 +57,7 @@ function getGemsBundle()
 
 function publishOnGitHub()
 {
-    return publish(siteRoot, (err) => console.log(`[Deploy]: ${err}`));
+    return publish(siteRoot, {dotfiles: true, message: "Chesspawn update!"}, (err) => console.log(`[Deploy]: ${err}`));
 }
 
 getGemsBundle().stderr.on('data', (data) => console.log(`[GemBundle] error: ${data}`));

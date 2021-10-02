@@ -9,6 +9,10 @@ permalink: /:categories/:year/:title/
 
 exclude:
   - "webpack.config.js"
+  
+include:
+  - ".well-known"
+  - ".nojekyll"
 
 js_dest: /assets/js
 

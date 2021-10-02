@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: savandev.github.io
+Token: ea287831b63d1d11abbf15007aaae040c70b85d2cb461f6d0fba927b65962fa0
