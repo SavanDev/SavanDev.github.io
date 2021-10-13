@@ -8,12 +8,12 @@ image: /assets/img/grapeSoda.png
 notAvailable: ["windows", "linux", "mac", "android"]
 platform: ["web"]
 language: ["English"]
-version: 0.1.0-preview
+version: 0.1.5-preview
 contentURL: https://savandev.github.io/FlxGrapeSoda/
 sourceCode: https://github.com/SavanDev/FlxGrapeSoda
 download: https://github.com/SavanDev/FlxGrapeSoda
-width: 640
-height: 576
+width: 1250
+height: 720
 ---
 > The game is in a very early stage of its development and many things may change in the final version.
 
