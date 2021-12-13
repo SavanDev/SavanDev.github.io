@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-<body class="fade" dark="1">
+<body dark="1">
     {%- include navbar.html -%}
     <article>
         <section id="contentFrame">
@@ -23,38 +23,38 @@
                 <blockquote id="platforms">
                     {%- for item in page.platform -%}
                     {% if item == "windows" %}
-                    {% fa_svg fab.fa-windows %}
+                    <i class="fab fa-windows"></i>
                     {% endif %}
                     {% if item == "linux" %}
-                    {% fa_svg fab.fa-linux %}
+                    <i class="fab fa-linux"></i>
                     {% endif %}
                     {% if item == "mac" %}
-                    {% fa_svg fab.fa-apple %}
+                    <i class="fab fa-apple"></i>
                     {% endif %}
                     {% if item == "web" %}
-                    {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                    <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i>
                     {% endif %}
                     {% if item == "android" %}
-                    {% fa_svg fab.fa-android %}
+                    <i class="fab fa-android"></i>
                     {% endif %}
                     {%- endfor -%}
                     {% if page.notAvailable %}
                     <span id="noRelease">
                         {%- for item in page.notAvailable -%}
                         {% if item == "windows" %}
-                        {% fa_svg fab.fa-windows %}
+                        <i class="fab fa-windows"></i>
                         {% endif %}
                         {% if item == "linux" %}
-                        {% fa_svg fab.fa-linux %}
+                        <i class="fab fa-linux"></i>
                         {% endif %}
                         {% if item == "mac" %}
-                        {% fa_svg fab.fa-apple %}
+                        <i class="fab fa-apple"></i>
                         {% endif %}
                         {% if item == "web" %}
-                        {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                        <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
                         {% endif %}
                         {% if item == "android" %}
-                        {% fa_svg fab.fa-android %}
+                        <i class="fab fa-android"></i>
                         {% endif %}
                         {%- endfor -%}
                     </span>
@@ -68,21 +68,21 @@
                     {% if page.download %}
                     <li class="bi">
                         <a href="{{ page.download }}" target="_blank">
-                            {% fa_svg fas.fa-download %} Download
+                            <i class="fas fa-download"></i> Download
                         </a>
                     </li>
                     {% endif %}
                     {% if page.sourceCode %}
                     <li class="bi">
                         <a href="{{ page.sourceCode }}" target="_blank">
-                            {% fa_svg fas.fa-code %} Source code
+                            <i class="fas fa-code"></i> Source code
                         </a>
                     </li>
                     {% endif %}
                     {% if page.website %}
                     <li class="bi">
                         <a href="{{ page.website }}" target="_blank">
-                            {% fa_svg fas.fa-globe %} Website
+                            <i class="fas fa-globe"></i> Website
                         </a>
                     </li>
                     {% endif %}

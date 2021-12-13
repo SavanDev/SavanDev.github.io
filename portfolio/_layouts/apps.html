@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-<body class="fade" dark="1">
+<body dark="1">
     {%- include navbar.html -%}
     <article>
         {%- for category in site.categories -%}
@@ -18,19 +18,19 @@
                                 <span class="appPlatform">
                                     {%- for item in page.platform -%}
                                         {% if item == "windows" %}
-                                        {% fa_svg fab.fa-windows %}
+                                        <i class="fab fa-windows"></i>
                                         {% endif %}
                                         {% if item == "linux" %}
-                                        {% fa_svg fab.fa-linux %}
+                                        <i class="fab fa-linux"></i>
                                         {% endif %}
                                         {% if item == "mac" %}
-                                        {% fa_svg fab.fa-apple %}
+                                        <i class="fab fa-apple"></i>
                                         {% endif %}
                                         {% if item == "web" %}
-                                        {% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+                                        <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
                                         {% endif %}
                                         {% if item == "android" %}
-                                        {% fa_svg fab.fa-android %}
+                                        <i class="fab fa-android"></i>
                                         {% endif %}
                                     {%- endfor -%}
                                 </span>

@@ -3,20 +3,13 @@
 @import "post";
 @import "exclusive";
 @import "drawings";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+@import "fontawesome/brands";
 
 @font-face {
     font-family: TechnaSans;
     src: url({{ "assets/fonts/TechnaSans-Regular.otf" | relative_url }});
-}
-
-body {
-    opacity: 1;
-    transition-duration: 0.7s;
-    transition-property: opacity;
-
-    &.fade {
-        opacity: 0;
-    }
 }
 
 b {
@@ -52,27 +45,6 @@ header {
     }
 }
 
-#lastProjects {
-    margin-bottom: 1rem;
-    @media screen and (min-width: 1000px) {
-        display: flex;
-        flex-wrap: wrap;
-
-        > * {
-            flex-basis: 0;
-            flex-grow: 1;
-        }
-
-        > :first-child {
-            margin-right: .4rem;
-        }
-
-        > :last-child {
-            margin-left: .4rem;
-        }
-    }
-}
-
 #logo {
     max-width: 720px;
     width: 100%;
@@ -105,15 +77,15 @@ header {
     .appPlatform {
         float: right;
         padding: .5rem;
-
-        svg:last-child {
-            margin-right: 0;
-        }
     }
 }
 
 .tiny {
     max-width: 180px;
+}
+
+i {
+    margin: auto .2rem;
 }
 
 .drawings-button {
@@ -134,4 +106,8 @@ header {
         background-image: url("/assets/img/drawings/Head-with-scarf.png");
         background-color: #00000F;
     }
+}
+
+article {
+    margin: auto !important;
 }

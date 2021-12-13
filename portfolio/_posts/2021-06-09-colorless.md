@@ -8,7 +8,7 @@ download: https://savandev.itch.io/colorless
 state: final
 platform: ["windows", "linux"]
 language: ["English"]
-version: 1.0.0
+version: 1.1
 ---
 > Game made for [#MejorandoAndo](https://itch.io/jam/mejorando-ando-mayo2021) of May
 

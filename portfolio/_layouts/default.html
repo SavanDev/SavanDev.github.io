@@ -3,22 +3,25 @@
 
 {%- include head.html -%}
 
-<body class="fade" dark="1">
+<body dark="1">
 	{%- include navbar.html -%}
 	<article>
 		<section class="center transparent">
 			<img id="logo" src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
 		</section>
-		<p class="alert-warning">{% fa_svg fas.fa-exclamation-triangle %} This site is under development, so many things may change in the future {% fa_svg fas.fa-exclamation-triangle %}</p>
-		<div id="lastProjects">
-			<p class="alert-primary">Latest release: <b>{{ page.latestRelease }}</b></p>
-			<p class="alert-secondary">Work in progress: <b>{{ page.wip }}</b></p>
-		</div>
-		<a href="{{ "/drawings" | relative_url }}">
-			<section class="drawings-button">
-				<h2>My drawings</h2>
-			</section>
-		</a>
+		<ol>
+			<li><a href="https://savandev.itch.io/" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a></li>
+			{% if site.github %}
+            <li><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+			{% endif %}
+			{% if site.twitter %}
+				<li><a href="https://twitter.com/{{ site.twitter:username }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+			{% endif %}
+			{% if site.instagram %}
+				<li><a href="https://instagram.com/{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+			{% endif %}
+			<li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+		</ol>
 	</article>
 	<article class="color-primary grid">
 		<section class="transparent">
@@ -34,6 +37,14 @@
 			<p><b>Storage:</b> {{ page.storage }}</p>
 		</section>
 	</article>
+	<article>
+		<a href="{{ "/drawings" | relative_url }}">
+			<section class="drawings-button">
+				<h2>My drawings</h2>
+			</section>
+		</a>
+	</article>
+	
 	<article class="color-dark">
 		<h3>My Projects</h3>
 		<section class="transparent">
@@ -47,19 +58,19 @@
 								<span class="appPlatform">
 									{%- for item in page.platform -%}
 										{% if item == "windows" %}
-										{% fa_svg fab.fa-windows %}
+										<i class="fab fa-windows"></i>
 										{% endif %}
 										{% if item == "linux" %}
-										{% fa_svg fab.fa-linux %}
+										<i class="fab fa-linux"></i>
 										{% endif %}
 										{% if item == "mac" %}
-										{% fa_svg fab.fa-apple %}
+										<i class="fab fa-apple"></i>
 										{% endif %}
 										{% if item == "web" %}
-										{% fa_svg fab.fa-firefox %}{% fa_svg fab.fa-chrome %}
+										<i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
 										{% endif %}
 										{% if item == "android" %}
-										{% fa_svg fab.fa-android %}
+										<i class="fab fa-android"></i>
 										{% endif %}
 									{%- endfor -%}
 								</span>
