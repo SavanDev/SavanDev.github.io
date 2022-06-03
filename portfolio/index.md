@@ -4,9 +4,9 @@ title: Welcome!
 description: SavanDev stuff here, all in this page!
 image: /assets/img/logo.png
 
-os: Windows 11 + Arch Linux (WSL)
+os: Arch Linux (<b>GNOME</b>)
 cpu: AMD Ryzen 5 1600 AF
-gpu: NVIDIA GT 710 (1 GB)
+gpu: NVIDIA GT 960 (2 GB)
 ram: 8 GB DDR4 (3200 MHz)
 storage: Kingston SNVS500G (M.2)
 ---

@@ -5,10 +5,16 @@
 
 <body dark="1">
 	{%- include navbar.html -%}
-	<article>
+	<article class="grid">
 		<section class="center transparent">
 			<img id="logo" src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
 		</section>
+		<section class="center">
+			<h3>About me</h3>
+			{{ content }}
+		</section>
+	</article>
+	<article class="social-links">
 		<ol>
 			<li><a href="https://savandev.itch.io/" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a></li>
 			{% if site.github %}
@@ -22,8 +28,13 @@
 			{% endif %}
 			<li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
 		</ol>
+		<a href="{{ "/drawings" | relative_url }}">
+			<section class="drawings-button">
+				<h2>My drawings</h2>
+			</section>
+		</a>
 	</article>
-	<article class="color-primary grid">
+	<!--article class="color-primary grid">
 		<section class="transparent">
 			<h3>About me</h3>
 			{{ content }}
@@ -36,48 +47,16 @@
 			<p><b>RAM:</b> {{ page.ram }}</p>
 			<p><b>Storage:</b> {{ page.storage }}</p>
 		</section>
-	</article>
-	<article>
-		<a href="{{ "/drawings" | relative_url }}">
-			<section class="drawings-button">
-				<h2>My drawings</h2>
-			</section>
-		</a>
-	</article>
+	</article-->
 	
 	<article class="color-dark">
 		<h3>My Projects</h3>
-		<section class="transparent">
-			{%- for category in site.categories -%}
-				<ul>
-					{%- for page in category[1] -%}
-						<li class="appsList">
-							<a href="{{ page.url | relative_url }}">
-								<img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
-								<span class="appText">{{ page.title }}</span>
-								<span class="appPlatform">
-									{%- for item in page.platform -%}
-										{% if item == "windows" %}
-										<i class="fab fa-windows"></i>
-										{% endif %}
-										{% if item == "linux" %}
-										<i class="fab fa-linux"></i>
-										{% endif %}
-										{% if item == "mac" %}
-										<i class="fab fa-apple"></i>
-										{% endif %}
-										{% if item == "web" %}
-										<i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
-										{% endif %}
-										{% if item == "android" %}
-										<i class="fab fa-android"></i>
-										{% endif %}
-									{%- endfor -%}
-								</span>
-							</a>
-						</li>
-					{%- endfor -%}
-				</ul>
+		<section class="transparent center">
+			{%- for post in site.posts -%}
+					<a class="appHome" href="{{ post.url | relative_url }}">
+						<img class="appImg" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+						<span class="appText">{{ post.title }}</span>
+					</a>
 			{%- endfor -%}
 		</section>
 	</article>

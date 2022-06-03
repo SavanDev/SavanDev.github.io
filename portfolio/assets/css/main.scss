@@ -111,3 +111,36 @@ i {
 article {
     margin: auto !important;
 }
+
+.appHome {
+    display: inline-block;
+    text-align: center;
+    max-width: 144px;
+    max-height: 176px;
+    margin: .5rem;
+    background-color: var(--background);
+    padding: 1rem;
+    border-radius: .5rem;
+
+    transition: transform .2s;
+
+    > img {
+        width: fit-content;
+    }
+
+    > .appText {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: .5rem;
+    }
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}
+
+.social-links {
+    padding-top: 0;
+}

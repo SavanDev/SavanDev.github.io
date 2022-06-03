@@ -5,16 +5,16 @@
     > a {
         display: inline-block;
         position: relative;
-        border-radius: 1rem;
+        border-radius: .75rem;
         border: 2px solid white;
         background-image: linear-gradient(0deg, $gradient1 0%, $gradient2 100%);
-        margin: .25rem;
+        margin: .5rem;
         overflow: hidden;
 
         transition: transform .2s;
 
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.25);
             z-index: 1;
             border: 2px solid var(--color-primary);
         }
