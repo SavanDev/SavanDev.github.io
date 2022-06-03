@@ -36,9 +36,9 @@ svg { fill: #fff; }
 
 .drawings-posting { display: block; text-align: center; }
 
-.drawings-posting > a { display: inline-block; position: relative; border-radius: 1rem; border: 2px solid white; background-image: linear-gradient(0deg, #000064 0%, cyan 100%); margin: .25rem; overflow: hidden; transition: transform .2s; }
+.drawings-posting > a { display: inline-block; position: relative; border-radius: .75rem; border: 2px solid white; background-image: linear-gradient(0deg, #000064 0%, cyan 100%); margin: .5rem; overflow: hidden; transition: transform .2s; }
 
-.drawings-posting > a:hover { transform: scale(1.5); z-index: 1; border: 2px solid var(--color-primary); }
+.drawings-posting > a:hover { transform: scale(1.25); z-index: 1; border: 2px solid var(--color-primary); }
 
 .drawings-posting > a img { width: fit-content; opacity: .75; transition: all .2s; }
 
@@ -3093,5 +3093,15 @@ i { margin: auto .2rem; }
 .drawings-button:hover { color: white; background-image: url("/assets/img/drawings/Head-with-scarf.png"); background-color: #00000F; }
 
 article { margin: auto !important; }
+
+.appHome { display: inline-block; text-align: center; max-width: 144px; max-height: 176px; margin: .5rem; background-color: var(--background); padding: 1rem; border-radius: .5rem; transition: transform .2s; }
+
+.appHome > img { width: fit-content; }
+
+.appHome > .appText { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-top: .5rem; }
+
+.appHome:hover { transform: scale(1.25); }
+
+.social-links { padding-top: 0; }
 
 /*# sourceMappingURL=main.css.map */
