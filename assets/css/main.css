@@ -1,16 +1,24 @@
-.post section:first-child { max-width: 18rem; }
+.post .post-details { max-width: 18rem; margin-bottom: 0; }
 
-.post section:first-child img { width: calc(100% - 3rem); margin: .5rem 1.5rem; }
+.post .post-logo { border: 2px solid var(--color-muted); border-radius: .5rem; background-color: var(--color-dark); padding: .5rem; width: 15rem; margin: .5rem 1.5rem; }
 
-.post section:last-child { max-width: 18rem; }
+.post .post-info { display: inline-block; vertical-align: top; margin: 1rem auto; width: calc(100% - 19rem); }
 
-.post #platforms { display: inline-block; width: fit-content; margin: 0 .5rem; }
+.post .post-info .post-title { display: inline-block; vertical-align: middle; }
 
-.post #trailer { padding: 1rem; }
+.post .post-info #platforms { display: inline-block; }
+
+.post #trailer { display: block; margin: auto 1rem 1rem 1rem; }
+
+.post #preview { display: block; margin: auto auto 1rem auto; border: 2px solid #fff; border-radius: .5rem; }
 
 .bi:hover svg { fill: white; }
 
 svg { fill: #fff; }
+
+.post-content blockquote { margin: 1rem auto !important; }
+
+.post-desc { text-align: center; padding: .75rem; margin-top: 0; padding-top: 0; }
 
 .exclusive section:first-child { max-width: 13rem; }
 
@@ -18,31 +26,31 @@ svg { fill: #fff; }
 
 .exclusive section:last-child { max-width: 18rem; min-height: 13rem; }
 
+.exclusive .post-logo { border: 2px solid var(--color-muted); border-radius: .5rem; background-color: var(--color-dark); padding: .5rem; }
+
 .exclusive #platforms { display: inline-block; width: fit-content; }
 
 .exclusive #platforms #noRelease > * { fill: gray; }
 
 .exclusive .language { background-color: var(--color-primary); margin-left: .25rem; padding: .5rem; border-radius: 1rem; }
 
-#contentFrame { display: block; width: fit-content; width: -moz-fit-content; margin: 1rem auto; }
+.exclusive ol { width: 95%; }
 
-#contentFrame iframe { border-radius: 1rem; }
+#contentFrame { display: block; margin: 1rem auto; width: 100%; }
+
+#contentFrame iframe { border-radius: 1rem; width: 100%; }
 
 .ex-description { padding-top: 0; }
 
-.drawings-title { background-color: var(--color-dark); padding: .5rem 1rem .1rem .5rem; border-radius: 1rem; }
+.drawing-post { display: inline-block; text-align: center; max-width: 144px; max-height: 176px; margin: .5rem; background-color: var(--color-dark); padding: 1rem; border-radius: .5rem; border: 2px solid var(--color-muted); transition: transform .2s; }
+
+.drawing-post > img { width: 108px; height: 108px; object-fit: cover; border-radius: .5rem; }
+
+.drawing-post > .drawing-social { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-top: .5rem; }
+
+.drawing-post:hover { border: 2px solid var(--color-primary); transform: scale(1.25); }
 
 .drawings-title > svg { width: 48px; margin-bottom: .5rem; vertical-align: middle; margin-right: 0; height: 32px; }
-
-.drawings-posting { display: block; text-align: center; }
-
-.drawings-posting > a { display: inline-block; position: relative; border-radius: .75rem; border: 2px solid white; background-image: linear-gradient(0deg, #000064 0%, cyan 100%); margin: .5rem; overflow: hidden; transition: transform .2s; }
-
-.drawings-posting > a:hover { transform: scale(1.25); z-index: 1; border: 2px solid var(--color-primary); }
-
-.drawings-posting > a img { width: fit-content; opacity: .75; transition: all .2s; }
-
-.drawings-posting > a img:hover { opacity: 1.0; }
 
 /*! Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
 .fa, .fas, .far, .fal, .fad, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
@@ -3054,6 +3062,18 @@ readers do not read off random characters that represent icons */
 
 .fab { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
 
+.appItem { display: inline-block; text-align: center; width: 256px; margin: .5rem; background-color: var(--color-dark); padding: 1rem; border-radius: .5rem; border: 2px solid var(--color-muted); transition: transform .2s; }
+
+.appItem > .appImg { width: fit-content; max-width: 128px; }
+
+.appItem > .appText { display: block; padding-top: .5rem; height: 56px; font-weight: bold; }
+
+.appItem > .appPlatform { display: block; padding: .25rem; }
+
+.appItem:hover { transform: scale(1.25); }
+
+.appsContainer:not(:last-child) { margin-bottom: 2.5rem !important; }
+
 @font-face { font-family: TechnaSans; src: url(/assets/fonts/TechnaSans-Regular.otf); }
 
 b { font-family: TechnaSans, "Roboto", "Open Sans", sans-serif; font-weight: normal; }
@@ -3062,25 +3082,7 @@ h1, h2, h3, h4, h5, h6 { font-family: TechnaSans, "Roboto", "Open Sans", sans-se
 
 .icon { display: inline-block; vertical-align: middle; width: 20px; height: 20px; margin: -4px .5rem 0 0; }
 
-a:hover { fill: white; }
-
-header img { width: auto; padding: 0 1.5rem; }
-
-@media screen and (min-width: 1000px) { header { padding: 2rem 0; } }
-
 #logo { max-width: 720px; width: 100%; }
-
-.grid-apps { display: inline; }
-
-.grid-apps a { margin: .5rem; }
-
-.grid-apps img { height: 128px; transition: transform .2s; }
-
-.grid-apps img:hover { transform: scale(1.25); }
-
-.appsList img { height: 32px; margin-right: 1rem; vertical-align: middle; }
-
-.appsList .appPlatform { float: right; padding: .5rem; }
 
 .tiny { max-width: 180px; }
 
@@ -3091,8 +3093,6 @@ i { margin: auto .2rem; }
 @media screen and (max-width: 600px) { .drawings-button { background-size: contain; } }
 
 .drawings-button:hover { color: white; background-image: url("/assets/img/drawings/Head-with-scarf.png"); background-color: #00000F; }
-
-article { margin: auto !important; }
 
 .appHome { display: inline-block; text-align: center; max-width: 144px; max-height: 176px; margin: .5rem; background-color: var(--background); padding: 1rem; border-radius: .5rem; transition: transform .2s; }
 
