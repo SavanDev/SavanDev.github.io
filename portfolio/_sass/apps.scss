@@ -1,0 +1,37 @@
+.appItem {
+    display: inline-block;
+    text-align: center;
+    width: 256px;
+    margin: .5rem;
+    background-color: var(--color-dark);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid var(--color-muted);
+
+    transition: transform .2s;
+
+    > .appImg {
+        width: fit-content;
+        max-width: 128px;
+    }
+
+    > .appText {
+        display: block;
+        padding-top: .5rem;
+        height: 56px;
+        font-weight: bold;
+    }
+
+    > .appPlatform {
+        display: block;
+        padding: .25rem;
+    }
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}
+
+.appsContainer:not(:last-child) {
+    margin-bottom: 2.5rem !important;
+}

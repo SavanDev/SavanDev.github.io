@@ -5,39 +5,35 @@
 
 <body dark="1">
     {%- include navbar.html -%}
-    <article>
+    <article class="fluid center">
         {%- for category in site.categories -%}
-            <section class="transparent">
-                <h3>{{ category[0] }}</h3>
-                <ul>
-                    {%- for page in category[1] -%}
-                        <li class="appsList">
-                            <a href="{{ page.url | relative_url }}">
-                                <img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
-                                <span class="appText">{{ page.title }}</span>
-                                <span class="appPlatform">
-                                    {%- for item in page.platform -%}
-                                        {% if item == "windows" %}
-                                        <i class="fab fa-windows"></i>
-                                        {% endif %}
-                                        {% if item == "linux" %}
-                                        <i class="fab fa-linux"></i>
-                                        {% endif %}
-                                        {% if item == "mac" %}
-                                        <i class="fab fa-apple"></i>
-                                        {% endif %}
-                                        {% if item == "web" %}
-                                        <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
-                                        {% endif %}
-                                        {% if item == "android" %}
-                                        <i class="fab fa-android"></i>
-                                        {% endif %}
-                                    {%- endfor -%}
-                                </span>
-                            </a>
-                        </li>
-                    {%- endfor -%}
-                </ul>
+            <section class="transparent appsContainer">
+                <h1>{{ category[0] }}</h1>
+                {%- for page in category[1] -%}
+                <a class="appItem" href="{{ page.url | relative_url }}">
+                    <img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
+                    <p class="appText">{{ page.title }}</p>
+                    <p class="appPlatform alert-muted">
+                        {%- for item in page.platform -%}
+                            {% if item == "windows" %}
+                            <i class="fab fa-windows"></i>
+                            {% endif %}
+                            {% if item == "linux" %}
+                            <i class="fab fa-linux"></i>
+                            {% endif %}
+                            {% if item == "mac" %}
+                            <i class="fab fa-apple"></i>
+                            {% endif %}
+                            {% if item == "web" %}
+                            <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
+                            {% endif %}
+                            {% if item == "android" %}
+                            <i class="fab fa-android"></i>
+                            {% endif %}
+                        {%- endfor -%}
+                    </p>
+                </a>
+                {%- endfor -%}
             </section>
         {%- endfor -%}
     </article>

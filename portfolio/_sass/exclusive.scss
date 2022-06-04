@@ -11,6 +11,13 @@
         min-height: 13rem;
     }
 
+    .post-logo {
+        border: 2px solid var(--color-muted);
+        border-radius: .5rem;
+        background-color: var(--color-dark);
+        padding: .5rem;
+    }
+
     #platforms {
         display: inline-block;
         width: fit-content;
@@ -26,16 +33,20 @@
         padding: .5rem;
         border-radius: 1rem;
     }
+
+    ol {
+        width: 95%;
+    }
 }
 
 #contentFrame {
     display: block;
-    width: fit-content;
-    width: -moz-fit-content; // fit-content not work on Firefox
     margin: 1rem auto;
+    width: 100%;
 
     iframe {
         border-radius: 1rem;
+        width: 100%;
     }
 }
 

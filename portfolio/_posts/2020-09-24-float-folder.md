@@ -11,9 +11,8 @@ state: final
 platform: ["windows"]
 language: "English"
 requeriments: ".NET Framework 4.5"
+preview: https://github.com/SavanDev/FloatFolder/raw/master/Demo.png
 ---
 Now you can have **floating folders** (Android-like) on Windows!
-
-<img src="https://github.com/SavanDev/FloatFolder/raw/master/Demo.png" class="rounded">
 
 > The program depends on the [.NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) to work.

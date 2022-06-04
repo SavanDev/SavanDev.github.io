@@ -7,64 +7,71 @@
     {%- include navbar.html -%}
     <article class="grid post">
         <section class="transparent">
-            {% if page.image %}
-            <img src="{{ page.image | relative_url }}" />
-            {% endif %}
-            <h4>{{ page.title }}</h4>
-            {% if page.platform %}
-            <blockquote id="platforms">
-                {%- for item in page.platform -%}
-                {% if item == "windows" %}
-                <i class="fab fa-windows"></i>
-                {% endif %}
-                {% if item == "linux" %}
-                <i class="fab fa-linux"></i>
-                {% endif %}
-                {% if item == "mac" %}
-                <i class="fab fa-apple"></i>
-                {% endif %}
-                {% if item == "web" %}
-                <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i>
-                {% endif %}
-                {% if item == "android" %}
-                <i class="fab fa-android"></i>
-                {% endif %}
-                {%- endfor -%}
-            </blockquote>
-            {% endif %}
-            {% if page.state != "final" %}
-            <span><b>{{ page.state }}</b></span>
-            {% endif %}
-            <ul>
-                {% if page.download %}
-                <li class="bi">
-                    <a href="{{ page.download }}">
-                        <i class="fas fa-download"></i> Download
-                        {% if page.version %}
-                        (<b>v{{ page.version }}</b>)
-                        {% endif %}
-                    </a>
-                </li>
-                {% endif %}
-                {% if page.website %}
-                <li class="bi">
-                    <a href="{{ page.website }}">
-                        <i class="fas fa-globe"></i> Website
-                    </a>
-                </li>
-                {% endif %}
-            </ul>
-        </section>
-        <section class="transparent">
             {% if page.trailer %}
             <div id="trailer">
                 {% youtube page.trailer %}
             </div>
             {% endif %}
-            <h4>Description</h4>
-            {{ content }}
+
+            {% if page.preview %}
+            <img id="preview" src="{{ page.preview }}" alt="Preview">
+            {% endif %}
+
+            {% if page.image %}
+            <img class="post-logo" src="{{ page.image | relative_url }}" />
+            {% endif %}
+
+            <section class="post-info transparent">
+                <h3 class="post-title">{{ page.title }}</h3>
+
+                {% if page.platform %}
+                <blockquote id="platforms">
+                    {%- for item in page.platform -%}
+                    {% if item == "windows" %}
+                    <i class="fab fa-windows"></i>
+                    {% endif %}
+                    {% if item == "linux" %}
+                    <i class="fab fa-linux"></i>
+                    {% endif %}
+                    {% if item == "mac" %}
+                    <i class="fab fa-apple"></i>
+                    {% endif %}
+                    {% if item == "web" %}
+                    <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i>
+                    {% endif %}
+                    {% if item == "android" %}
+                    <i class="fab fa-android"></i>
+                    {% endif %}
+                    {%- endfor -%}
+                </blockquote>
+                {% endif %}
+
+                {% if page.state != "final" %}
+                <span><b>{{ page.state }}</b></span>
+                {% endif %}
+
+                <ul>
+                    {% if page.download %}
+                    <li class="bi">
+                        <a href="{{ page.download }}">
+                            <i class="fas fa-download"></i> Download
+                            {% if page.version %}
+                            (<b>v{{ page.version }}</b>)
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if page.website %}
+                    <li class="bi">
+                        <a href="{{ page.website }}">
+                            <i class="fas fa-globe"></i> Website
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </section>
         </section>
-        <section>
+        <section class="post-details">
             <h4>Initial release</h4>
             <p>{{ page.date | date: '%m/%d/%Y' }}</p>
             {% if page.latestUpdate %}
@@ -83,6 +90,12 @@
                     <p>{{ item }}</p>
                 {% endfor %}
             {% endif %}
+        </section>
+    </article>
+    <article>
+        <section class="post-content transparent">
+            <h3 class="post-desc">Description</h3>
+            {{ content }}
         </section>
     </article>
 

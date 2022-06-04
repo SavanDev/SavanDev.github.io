@@ -12,13 +12,14 @@
             {% endif %}
         </section>
         <article class="grid exclusive">
-            <section>
+            <section class="transparent">
                 {% if page.image %}
-                <img src="{{ page.image | relative_url }}" />
+                <img class="post-logo" src="{{ page.image | relative_url }}" />
                 {% endif %}
             </section>
             <section class="transparent">
                 <h4>{{ page.title }}</h4>
+
                 {% if page.platform %}
                 <blockquote id="platforms">
                     {%- for item in page.platform -%}
@@ -61,9 +62,11 @@
                     {% endif %}
                 </blockquote>
                 {% endif %}
+
                 {% if page.version %}
                 <span><b>v{{ page.version }}</b></span>
                 {% endif %}
+
                 <ol>
                     {% if page.download %}
                     <li class="bi">

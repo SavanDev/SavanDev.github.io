@@ -1,24 +1,44 @@
 .post {
-    section:first-child {
+    .post-details {
         max-width: 18rem;
-        img {
-            width: calc(100% - 3rem);
-            margin: .5rem 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .post-logo {
+        border: 2px solid var(--color-muted);
+        border-radius: .5rem;
+        background-color: var(--color-dark);
+        padding: .5rem;
+        width: 15rem;
+        margin: .5rem 1.5rem;
+    }
+
+    .post-info {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1rem auto;
+        width: calc(100% - 19rem);
+
+        .post-title {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    
+        #platforms {
+            display: inline-block;
         }
     }
 
-    section:last-child {
-        max-width: 18rem;
-    }
-
-    #platforms {
-        display: inline-block;
-        width: fit-content;
-        margin: 0 .5rem;
-    }
-
     #trailer {
-        padding: 1rem;
+        display: block;
+        margin: auto 1rem 1rem 1rem;
+    }
+
+    #preview {
+        display: block;
+        margin: auto auto 1rem auto;
+        border: 2px solid #fff;
+        border-radius: .5rem;
     }
 }
 
@@ -32,4 +52,17 @@
 
 svg {
     fill: #fff;
+}
+
+.post-content {
+    blockquote {
+        margin: 1rem auto !important;
+    }
+}
+
+.post-desc {
+    text-align: center;
+    padding: .75rem;
+    margin-top: 0;
+    padding-top: 0;
 }

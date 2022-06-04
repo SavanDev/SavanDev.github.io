@@ -9,25 +9,26 @@
 		<section class="center transparent">
 			<img id="logo" src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
 		</section>
-		<section class="center">
+		<section class="center transparent">
 			<h3>About me</h3>
 			{{ content }}
+			<ol>
+				<li><a href="https://savandev.itch.io/" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a></li>
+				{% if site.github %}
+				<li><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+				{% endif %}
+				{% if site.twitter %}
+					<li><a href="https://twitter.com/{{ site.twitter:username }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+				{% endif %}
+				{% if site.instagram %}
+					<li><a href="https://instagram.com/{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+				{% endif %}
+				<li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+			</ol>
 		</section>
 	</article>
 	<article class="social-links">
-		<ol>
-			<li><a href="https://savandev.itch.io/" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a></li>
-			{% if site.github %}
-            <li><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-			{% endif %}
-			{% if site.twitter %}
-				<li><a href="https://twitter.com/{{ site.twitter:username }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-			{% endif %}
-			{% if site.instagram %}
-				<li><a href="https://instagram.com/{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-			{% endif %}
-			<li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
-		</ol>
+		
 		<a href="{{ "/drawings" | relative_url }}">
 			<section class="drawings-button">
 				<h2>My drawings</h2>

@@ -6,6 +6,7 @@
 @import "fontawesome/fontawesome";
 @import "fontawesome/solid";
 @import "fontawesome/brands";
+@import "apps";
 
 @font-face {
     font-family: TechnaSans;
@@ -30,54 +31,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: -4px .5rem 0 0;
 }
 
-a:hover {
-    fill: white;
-}
-
-header {
-    img {
-        width: auto;
-        padding: 0 1.5rem;
-    }
-
-    @media screen and (min-width: 1000px) {
-        padding: 2rem 0;
-    }
-}
-
 #logo {
     max-width: 720px;
     width: 100%;
-}
-
-.grid-apps {
-    display: inline;
-
-    a {
-        margin: .5rem;
-    }
-
-    img {
-        height: 128px;
-        transition: transform .2s;
-
-        &:hover {
-            transform: scale(1.25);
-        }
-    }
-}
-
-.appsList {
-    img {
-        height: 32px;
-        margin-right: 1rem;
-        vertical-align: middle;
-    }
-
-    .appPlatform {
-        float: right;
-        padding: .5rem;
-    }
 }
 
 .tiny {
@@ -106,10 +62,6 @@ i {
         background-image: url("/assets/img/drawings/Head-with-scarf.png");
         background-color: #00000F;
     }
-}
-
-article {
-    margin: auto !important;
 }
 
 .appHome {

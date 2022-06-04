@@ -12,6 +12,7 @@ latestUpdate: 2/20/2022
 version: 0.7
 ---
 > Made for #minijam100
+
 **Congratulations, you have a new job!**
 
 You got a job in a well-known factory in your city and today is the day you are tested to see if you are suitable for the position.
