@@ -12,7 +12,7 @@ version: 0.1.5-preview
 contentURL: https://savandev.github.io/FlxGrapeSoda/
 sourceCode: https://github.com/SavanDev/FlxGrapeSoda
 download: https://github.com/SavanDev/FlxGrapeSoda
-width: 1250
+width: 1260
 height: 720
 ---
 > The game is in a very early stage of its development and many things may change in the final version.
