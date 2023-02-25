@@ -5,30 +5,19 @@ description: Get the drink before it completely disappears from the market!
 category: Games
 tags: ["haxeflixel", "haxe", "platformer"]
 image: /assets/img/grapeSoda.png
-notAvailable: ["windows", "linux", "mac", "android"]
-platform: ["web"]
+notAvailable: ["mac", "android"]
+platform: ["web", "windows", "linux"]
 language: ["English"]
-version: 0.1.5-preview
+version: 0.1.5-alpha
 contentURL: https://savandev.github.io/FlxGrapeSoda/
 sourceCode: https://github.com/SavanDev/FlxGrapeSoda
-download: https://github.com/SavanDev/FlxGrapeSoda
+download: https://savandev.itch.io/grapesoda
+latestUpdate: 2/22/2023
 width: 1260
 height: 720
 ---
-> The game is in a very early stage of its development and many things may change in the final version.
+One day you get the news that your favorite drink is going to be taken off the market in your country... the **GRAPE SODA**.
 
-#### Context
+Your mission is to try to get the last remaining units in the stores before it disappears completely... but it won't be cheap.
 
-One day, the news reaches you that in your country your favorite drink is going to be withdrawn from the market ...grape soda.
-
-Your mission is to try to get the last units left in the stores before it disappears completely ...but it will not come cheap.
-
-#### Controls
-
-**Left/Right Arrow** - Move
-
-**Up Arrow/Z** - Jump
-
-**C/Space** - Punch
-
-**Enter** - Pause/Skip
+> The latest version of the game for the browser is outdated, to try the new level editor go to "**Download**".

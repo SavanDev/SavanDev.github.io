@@ -7,6 +7,7 @@
 @import "fontawesome/solid";
 @import "fontawesome/brands";
 @import "apps";
+@import "slidershow";
 
 @font-face {
     font-family: TechnaSans;
@@ -52,6 +53,8 @@ i {
     background-size: 20%;
     color: white;
     text-align: right;
+    max-width: 700px;
+    margin: auto;
 
     @media screen and (max-width: 600px) {
         background-size: contain;
@@ -65,11 +68,9 @@ i {
 }
 
 .appHome {
-    display: inline-block;
+    display: block;
     text-align: center;
-    max-width: 144px;
-    max-height: 176px;
-    margin: .5rem;
+    margin: 0 40px;
     background-color: var(--background);
     padding: 1rem;
     border-radius: .5rem;
@@ -77,19 +78,17 @@ i {
     transition: transform .2s;
 
     > img {
-        width: fit-content;
+        width: 64px;
     }
 
     > .appText {
         display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
+        font-weight: bolder;
+        font-size: large;
+        //white-space: nowrap;
         padding-top: .5rem;
-    }
-
-    &:hover {
-        transform: scale(1.25);
     }
 }
 
