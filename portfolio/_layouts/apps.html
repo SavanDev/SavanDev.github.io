@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en" }}">
 
-{%- include head.html -%}
+{% include head.html %}
 
 <body dark="1">
-    {%- include navbar.html -%}
-    <article class="fluid center">
-        {%- for category in site.categories -%}
+    {% include navbar.html %}
+    <article class="center">
+        {% for category in site.categories %}
             <section class="transparent appsContainer">
-                <h1>{{ category[0] }}</h1>
-                {%- for page in category[1] -%}
-                <a class="appItem" href="{{ page.url | relative_url }}">
-                    <img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
-                    <p class="appText">{{ page.title }}</p>
-                    <p class="appPlatform alert-muted">
-                        {%- for item in page.platform -%}
-                            {% if item == "windows" %}
-                            <i class="fab fa-windows"></i>
-                            {% endif %}
-                            {% if item == "linux" %}
-                            <i class="fab fa-linux"></i>
-                            {% endif %}
-                            {% if item == "mac" %}
-                            <i class="fab fa-apple"></i>
-                            {% endif %}
-                            {% if item == "web" %}
-                            <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
-                            {% endif %}
-                            {% if item == "android" %}
-                            <i class="fab fa-android"></i>
-                            {% endif %}
-                        {%- endfor -%}
-                    </p>
-                </a>
-                {%- endfor -%}
+                <header class="gradient-primary">
+                    <h1>{{ category[0] }}</h1>
+                </header>
+                {% for page in category[1] %}
+                    {% if page.layout == "post" %}
+                    <a class="appItem" href="{{ page.url | relative_url }}">
+                        <img class="appImg" src="{{ page.image | relative_url }}" alt="{{ page.title}}">
+                        <p class="appText">{{ page.title }}</p>
+                        <p class="appPlatform alert-muted">
+                            {% for item in page.platform %}
+                                {% if item == "windows" %}
+                                <i class="fab fa-windows"></i>
+                                {% endif %}
+                                {% if item == "linux" %}
+                                <i class="fab fa-linux"></i>
+                                {% endif %}
+                                {% if item == "mac" %}
+                                <i class="fab fa-apple"></i>
+                                {% endif %}
+                                {% if item == "web" %}
+                                <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
+                                {% endif %}
+                                {% if item == "android" %}
+                                <i class="fab fa-android"></i>
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+                    </a>
+                    {% endif %}
+                {% endfor %}
             </section>
-        {%- endfor -%}
+        {% endfor %}
     </article>
-    {%- include footer.html -%}
+    {% include footer.html %}
 </body>
 </html>

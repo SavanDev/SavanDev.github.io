@@ -2,11 +2,11 @@
     <a class="navbar-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
     {% if site.showNavbar %}
         <ul class="navbar-menu">
-            {%- for pagesList in site.pages -%}
+            {% for pagesList in site.pages %}
                 {% if pagesList.showInNavbar %}
                     <li><a href="{{ pagesList.url | relative_url }}">{{ pagesList.title | escape }}</a></li>
                 {% endif %}
-            {%- endfor -%}
+            {% endfor %}
         </ul>
     {% endif %}
     <ul class="navbar-right-menu">

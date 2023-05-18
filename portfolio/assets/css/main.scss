@@ -14,6 +14,10 @@
     src: url({{ "assets/fonts/TechnaSans-Regular.otf" | relative_url }});
 }
 
+section {
+    box-shadow: none;
+}
+
 b {
     font-family: TechnaSans, "Roboto", "Open Sans", sans-serif;
     font-weight: normal;
@@ -50,15 +54,12 @@ i {
     background-repeat: no-repeat;
     background-color: #0F0000;
     background-position-y: center;
-    background-size: 20%;
+    background-size: contain;
     color: white;
     text-align: right;
     max-width: 700px;
     margin: auto;
-
-    @media screen and (max-width: 600px) {
-        background-size: contain;
-    }
+    border: var(--color-dark) 2px solid;
 
     &:hover {
         color: white;
@@ -70,12 +71,7 @@ i {
 .appHome {
     display: block;
     text-align: center;
-    margin: 0 40px;
-    background-color: var(--background);
     padding: 1rem;
-    border-radius: .5rem;
-
-    transition: transform .2s;
 
     > img {
         width: 64px;
@@ -94,4 +90,16 @@ i {
 
 .social-links {
     padding-top: 0;
+}
+
+.labsMenu {
+    display: none; // Hasta que esté terminado
+    max-width: initial;
+
+    @media screen and (min-width: 1000px) {
+        position: sticky;
+        top: 4rem;
+        align-self: flex-start;
+        max-width: 25rem;
+    }
 }

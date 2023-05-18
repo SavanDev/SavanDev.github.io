@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en" }}">
 
-{%- include head.html -%}
+{% include head.html %}
 
 <body dark="1">
-	{%- include navbar.html -%}
+	{% include navbar.html %}
 	<article class="grid">
 		<section class="center transparent">
 			<img id="logo" src="{{ "/assets/img/banner-white.png" | relative_url}}" alt="Banner">
@@ -14,17 +14,15 @@
 			{{ content }}
 			<ol>
 				<li><a href="https://savandev.itch.io/" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a></li>
-				{% if site.github %}
-				<li><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-				{% endif %}
 				{% if site.twitter %}
 					<li><a href="https://twitter.com/{{ site.twitter:username }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
 				{% endif %}
 				{% if site.instagram %}
 					<li><a href="https://instagram.com/{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
 				{% endif %}
-				<li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+				<!--li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li-->
 			</ol>
+			<a href='https://cafecito.app/savandev' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_6.png' alt='Invitame un café en cafecito.app' /></a>
 		</section>
 	</article>
 	<!--article class="color-primary grid">
@@ -42,18 +40,23 @@
 		</section>
 	</article-->
 	
+	<ol>
+		<li><a href="{{ "/labs" | relative_url }}"><h3><i class="fas fa-flask"></i> Labs</h3></a></li>
+	</ol>
 	<article class="transparent grid">
 		<!-- Slideshow container -->
 		<section class="slideshow-container">
 			<!-- Full-width images with number and caption text -->
-			{%- for post in site.posts -%}
-				<a class="mySlides fade" href="{{ post.url | relative_url }}">
-					<div class="appHome">
-						<img class="appImg" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-						<span class="appText">{{ post.title }}</span>
-					</div>
-				</a>
-			{%- endfor -%}
+			{% for post in site.posts %}
+				{% if post.layout == "post" %}
+					<a class="mySlides fade" href="{{ post.url | relative_url }}">
+						<div class="appHome">
+							<img class="appImg" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+							<span class="appText">{{ post.title }}</span>
+						</div>
+					</a>
+				{% endif %}
+			{% endfor %}
 			<!-- Next and previous buttons -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -71,7 +74,7 @@
 			<h2>More coming soon...</h2>
 		</section>
 	</article>
-	{%- include footer.html -%}
+	{% include footer.html %}
 </body>
 
 </html>

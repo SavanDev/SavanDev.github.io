@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en" }}">
 
-{%- include head.html -%}
+{% include head.html %}
 
 <body dark="1">
-    {%- include navbar.html -%}
+    {% include navbar.html %}
     <article>
         <section id="contentFrame">
             {% if page.contentURL %}
@@ -22,7 +22,7 @@
 
                 {% if page.platform %}
                 <blockquote id="platforms">
-                    {%- for item in page.platform -%}
+                    {% for item in page.platform %}
                     {% if item == "windows" %}
                     <i class="fab fa-windows"></i>
                     {% endif %}
@@ -38,10 +38,10 @@
                     {% if item == "android" %}
                     <i class="fab fa-android"></i>
                     {% endif %}
-                    {%- endfor -%}
+                    {% endfor %}
                     {% if page.notAvailable %}
                     <span id="noRelease">
-                        {%- for item in page.notAvailable -%}
+                        {% for item in page.notAvailable %}
                         {% if item == "windows" %}
                         <i class="fab fa-windows"></i>
                         {% endif %}
@@ -57,7 +57,7 @@
                         {% if item == "android" %}
                         <i class="fab fa-android"></i>
                         {% endif %}
-                        {%- endfor -%}
+                        {% endfor %}
                     </span>
                     {% endif %}
                 </blockquote>
@@ -106,7 +106,7 @@
             {{ content }}
         </section>
     </article>
-    {%- include footer.html -%}
+    {% include footer.html %}
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en" }}">
 
-{%- include head.html -%}
+{% include head.html %}
 
 <body dark="1">
-    {%- include navbar.html -%}
+    {% include navbar.html %}
     <article class="grid post">
         <section class="transparent">
             {% if page.trailer %}
@@ -26,7 +26,7 @@
 
                 {% if page.platform %}
                 <blockquote id="platforms">
-                    {%- for item in page.platform -%}
+                    {% for item in page.platform %}
                     {% if item == "windows" %}
                     <i class="fab fa-windows"></i>
                     {% endif %}
@@ -42,7 +42,7 @@
                     {% if item == "android" %}
                     <i class="fab fa-android"></i>
                     {% endif %}
-                    {%- endfor -%}
+                    {% endfor %}
                 </blockquote>
                 {% endif %}
 
@@ -99,7 +99,7 @@
         </section>
     </article>
     
-    {%- include footer.html -%}
+    {% include footer.html %}
 </body>
 
 </html>
