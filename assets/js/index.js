@@ -1,4 +1,4 @@
-var WEB_VERSION = "1.3.1";
+var WEB_VERSION = "1.3.5";
 document.getElementById("beta-text").innerText = "v".concat(WEB_VERSION);
 var slideIndex = 1;
 showSlides(slideIndex);
