@@ -6238,95 +6238,31 @@ readers do not read off random characters that represent icons */
 
 .appItem {
   display: inline-block;
-  text-align: center;
-  width: 256px;
   margin: 0.5rem;
   background-color: var(--color-dark);
-  padding: 1rem;
   border-radius: 0.5rem;
   border: 2px solid var(--color-muted);
   transition: transform 0.2s;
 }
-.appItem > .appImg {
-  width: fit-content;
-  max-width: 128px;
+.appItem:hover {
+  transform: scale(1.1);
 }
-.appItem > .appText {
+
+.appImg {
+  max-width: 72px;
+}
+
+.appText {
   display: block;
-  padding-top: 0.5rem;
-  height: 56px;
   font-weight: bold;
 }
-.appItem > .appPlatform {
+
+.appPlatform {
   display: block;
   padding: 0.25rem;
-}
-.appItem:hover {
-  transform: scale(1.25);
+  width: fit-content;
 }
 
-.appsContainer:not(:last-child) {
-  margin-bottom: 2.5rem !important;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  padding: 0;
-  max-width: 700px;
-  background-color: var(--color-dark);
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 3px;
-  user-select: none;
-}
-
-.prev {
-  left: 0.5rem;
-}
-
-.next {
-  right: 0.5rem;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @font-face {
   font-family: TechnaSans;
   src: url(/assets/fonts/TechnaSans-Regular.otf);
@@ -6372,16 +6308,44 @@ i {
   background-color: #0F0000;
   background-position-y: center;
   background-size: contain;
-  color: white;
   text-align: right;
-  max-width: 700px;
-  margin: auto;
+  margin: 0.5rem auto;
   border: var(--color-dark) 2px solid;
+  padding: 0.5rem;
 }
 .drawings-button:hover {
-  color: white;
   background-image: url("/assets/img/drawings/Head-with-scarf.png");
   background-color: #00000F;
+}
+
+.projects-button {
+  background-image: url("/assets/img/drawings/Chibi.png");
+  background-repeat: no-repeat;
+  background-color: #6abe30;
+  background-position-y: center;
+  background-size: contain;
+  text-align: right;
+  margin: 0.5rem auto;
+  border: var(--color-dark) 2px solid;
+  padding: 0.5rem;
+}
+.projects-button > a {
+  color: white;
+}
+.projects-button > a:hover {
+  color: black;
+}
+
+.labs-button {
+  background-image: url("/assets/img/labs.png");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position-y: center;
+  background-size: contain;
+  text-align: right;
+  margin: 0.5rem auto;
+  border: var(--color-dark) 2px solid;
+  padding: 0.5rem;
 }
 
 .appHome {
@@ -6397,10 +6361,6 @@ i {
   font-weight: bolder;
   font-size: large;
   padding-top: 0.5rem;
-}
-
-.social-links {
-  padding-top: 0;
 }
 
 .labsMenu {
