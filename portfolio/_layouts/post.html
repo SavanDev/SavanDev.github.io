@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en" }}">
+<html lang="{{ site.lang | default: 'en' }}">
 
 {% include head.html %}
 
@@ -7,16 +7,6 @@
     {% include navbar.html %}
     <article class="grid post">
         <section class="transparent">
-            {% if page.trailer %}
-            <div id="trailer">
-                {% youtube page.trailer %}
-            </div>
-            {% endif %}
-
-            {% if page.preview %}
-            <img id="preview" src="{{ page.preview }}" alt="Preview">
-            {% endif %}
-
             {% if page.image %}
             <img class="post-logo" src="{{ page.image | relative_url }}" />
             {% endif %}
@@ -70,6 +60,15 @@
                     {% endif %}
                 </ul>
             </section>
+            {% if page.trailer %}
+            <div id="trailer">
+                {% youtube page.trailer %}
+            </div>
+            {% endif %}
+
+            {% if page.preview %}
+            <img id="preview" src="{{ page.preview }}" alt="Preview">
+            {% endif %}
         </section>
         <section class="post-details">
             <h4>Initial release</h4>

@@ -7,7 +7,6 @@
 @import "fontawesome/solid";
 @import "fontawesome/brands";
 @import "apps";
-@import "slidershow";
 
 @font-face {
     font-family: TechnaSans;
@@ -55,17 +54,47 @@ i {
     background-color: #0F0000;
     background-position-y: center;
     background-size: contain;
-    color: white;
     text-align: right;
-    max-width: 700px;
-    margin: auto;
+    margin: .5rem auto;
     border: var(--color-dark) 2px solid;
+    padding: .5rem;
 
     &:hover {
-        color: white;
         background-image: url("/assets/img/drawings/Head-with-scarf.png");
         background-color: #00000F;
     }
+}
+
+.projects-button {
+    background-image: url("/assets/img/drawings/Chibi.png");
+    background-repeat: no-repeat;
+    background-color: #6abe30;
+    background-position-y: center;
+    background-size: contain;
+    text-align: right;
+    margin: .5rem auto;
+    border: var(--color-dark) 2px solid;
+    padding: .5rem;
+
+    > a {
+        color: white;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.labs-button {
+    background-image: url("/assets/img/labs.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-y: center;
+    background-size: contain;
+    text-align: right;
+    margin: .5rem auto;
+    border: var(--color-dark) 2px solid;
+    padding: .5rem;
 }
 
 .appHome {
@@ -86,10 +115,6 @@ i {
         //white-space: nowrap;
         padding-top: .5rem;
     }
-}
-
-.social-links {
-    padding-top: 0;
 }
 
 .labsMenu {
