@@ -1,27 +1,22 @@
-- name: Perfil 2020
-  url: assets/img/drawings/Perfil-HQ.jpg
-  link: https://www.instagram.com/p/CHf9BxlHpp2/
-  social: instagram
-
 - name: Dylan (Genocide)
   url: assets/img/drawings/Dylan.png
-  link: https://www.instagram.com/p/CLD_RmyHsYP/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1783708166368194660
+  social: twitter
 
 - name: Chara
   url: assets/img/drawings/Chara.png
-  link: https://www.instagram.com/p/CLD_RmyHsYP/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1783708166368194660
+  social: twitter
 
 - name: Frisk
   url: assets/img/drawings/Frisk.png
-  link: https://www.instagram.com/p/CLD_RmyHsYP/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1783708166368194660
+  social: twitter
 
 - name: Frisk (Neutral)
   url: assets/img/drawings/FriskNeutral.png
-  link: https://www.instagram.com/p/CLVLwVCn-tK/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1783710096049975717
+  social: twitter
 
 - name: Niko (OneShot)
   url: assets/img/drawings/Niko.png
@@ -30,18 +25,18 @@
 
 - name: Coffe
   url: assets/img/drawings/Coffe.png
-  link: https://www.instagram.com/p/CLLsUmBHTRv/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1783718226737717277
+  social: twitter
 
 - name: Chibi
   url: assets/img/drawings/Chibi.png
-  link: https://www.instagram.com/p/CLD_jH4HXM2/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1783718390151975382
+  social: twitter
 
 - name: Fanta Uva
   url: assets/img/drawings/FantaUva.gif
-  link: https://www.instagram.com/p/CLSMHWfnkdB/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1784024645345116426
+  social: twitter
 
 - name: Twitter (120 followers!)
   url: assets/img/drawings/Twitter120.png
@@ -60,13 +55,13 @@
 
 - name: Cashier
   url: assets/img/drawings/Cashier.png
-  link: https://www.instagram.com/p/CPAIhACnsBb/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1784025612878819737
+  social: twitter
 
 - name: Dylan (Grape Soda)
   url: assets/img/drawings/DylanFanta.png
-  link: https://www.instagram.com/p/CPAIhACnsBb/
-  social: instagram
+  link: https://twitter.com/PhoenixBlue36/status/1784025612878819737
+  social: twitter
 
 - name: Me (OC)
   url: assets/img/drawings/Head.png
@@ -98,16 +93,6 @@
   link: https://twitter.com/dylnavas36/status/1424155139867353088
   social: twitter
 
-- name: Luka (Duo)
-  url: assets/img/drawings/LukaDuo.png
-  link: https://twitter.com/dylnavas36/status/1432117458870185984
-  social: twitter
-
-- name: Luka (Isaac)
-  url: assets/img/drawings/LukaIsaac.png
-  link: https://twitter.com/dylnavas36/status/1432117458870185984
-  social: twitter
-
 - name: FNF (QT Mod)
   url: assets/img/drawings/QT-Test.png
   link: https://twitter.com/dylnavas36/status/1440891083135856640
@@ -126,11 +111,6 @@
 - name: Thresh (LOL)
   url: assets/img/drawings/Thresh.png
   link: https://twitter.com/dylnavas36/status/1467621635738030084
-  social: twitter
-
-- name: Evil Luka
-  url: assets/img/drawings/EvilLuka.png
-  link: https://twitter.com/dylnavas36/status/1470159970167664645
   social: twitter
 
 - name: Stegosaurus
@@ -163,6 +143,11 @@
   link: https://twitter.com/dylnavas36/status/1558802914222768129
   social: twitter
 
+- name: Me (BluePhoenix)
+  url: assets/img/drawings/NewDylan.png
+  link: https://twitter.com/PhoenixBlue36/status/1784027533530243247
+  social: twitter
+
 - name: Dream #1
   url: assets/img/drawings/Dream-0001.png
   link: https://twitter.com/dylnavas36/status/1653526504398114817
@@ -182,3 +167,38 @@
   url: assets/img/drawings/Dream-0004.png
   link: https://twitter.com/dylnavas36/status/1659004081074053121
   social: dream
+
+- name: Dream #5
+  url: assets/img/drawings/Dream-0005.png
+  link: https://twitter.com/dylnavas36/status/1661940896642875393
+  social: dream
+
+- name: Dream #6
+  url: assets/img/drawings/Dream-0006.png
+  link: https://twitter.com/dylnavas36/status/1664396475441242112
+  social: dream
+
+- name: Dream #7
+  url: assets/img/drawings/Dream-0007.png
+  link: https://twitter.com/dylnavas36/status/1671369085857177602
+  social: dream
+
+- name: Tired
+  url: assets/img/drawings/tired.png
+  link: https://twitter.com/dylnavas36/status/1747821793446924654
+  social: twitter
+
+- name: Milei (2023)
+  url: assets/img/drawings/milei.png
+  link: https://twitter.com/dylnavas36/status/1773583969130319983
+  social: twitter
+
+- name: Kaguyita
+  url: assets/img/drawings/kaguyita.png
+  link: https://twitter.com/PhoenixBlue36/status/1784062358744097039
+  social: twitter
+
+- name: Chika
+  url: assets/img/drawings/chika.png
+  link: https://twitter.com/PhoenixBlue36/status/1784062509684572671
+  social: twitter

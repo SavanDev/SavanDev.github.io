@@ -55,7 +55,7 @@ i {
     background-position-y: center;
     background-size: contain;
     text-align: right;
-    margin: .5rem auto;
+    margin: auto .5rem;
     border: var(--color-dark) 2px solid;
     padding: .5rem;
 
@@ -72,7 +72,7 @@ i {
     background-position-y: center;
     background-size: contain;
     text-align: right;
-    margin: .5rem auto;
+    margin: auto .5rem;
     border: var(--color-dark) 2px solid;
     padding: .5rem;
 
@@ -92,7 +92,7 @@ i {
     background-position-y: center;
     background-size: contain;
     text-align: right;
-    margin: .5rem auto;
+    margin: auto .5rem;
     border: var(--color-dark) 2px solid;
     padding: .5rem;
 }
@@ -127,4 +127,12 @@ i {
         align-self: flex-start;
         max-width: 25rem;
     }
+}
+
+footer {
+    margin-bottom: 1rem;
+}
+
+.links {
+    margin: 0 auto;
 }

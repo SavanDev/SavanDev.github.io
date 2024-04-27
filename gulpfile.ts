@@ -5,12 +5,12 @@ import { init } from 'browser-sync';
 import { publish } from 'gh-pages';
 import ts from 'gulp-typescript';
 
-const cleanifyCSS = './node_modules/cleanify-design/dist/css/cleanify.css';
-const cleanifyJS = './node_modules/cleanify-design/dist/js/cleanify.js';
+/*const cleanifyCSS = './node_modules/cleanify-design/dist/css/cleanify.css';
+const cleanifyJS = './node_modules/cleanify-design/dist/js/cleanify.js';*/
 const siteRoot = '_site';
 const siteSourceDir = 'portfolio';
 
-function copyCleanifyFiles()
+/*function copyCleanifyFiles()
 {
     console.log("Copying CSS...");
     var CSS = src(cleanifyCSS).pipe(dest(`${siteSourceDir}/assets/css`, { overwrite: true }));
@@ -18,7 +18,7 @@ function copyCleanifyFiles()
     var JS = src(cleanifyJS).pipe(dest(`${siteSourceDir}/assets/js`, { overwrite: true }));
     console.log("CSS & JS Success!");
     return CSS && JS;
-}
+}*/
 
 function compileJS()
 {
@@ -64,5 +64,5 @@ getGemsBundle().stderr.on('data', (data) => console.log(`[GemBundle] error: ${da
 runJekyll().stderr.on('data', (data) => console.log(`[Jekyll] error: ${data}`));
 
 // Tasks
-task('default', series(getGemsBundle, copyCleanifyFiles, compileJS, runJekyll, serveSite));
-task('github', series(getGemsBundle, copyCleanifyFiles, compileJS, runJekyll, publishOnGitHub));
+task('default', series(getGemsBundle, compileJS, runJekyll, serveSite));
+task('github', series(getGemsBundle, compileJS, runJekyll, publishOnGitHub));
