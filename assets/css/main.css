@@ -6309,7 +6309,7 @@ i {
   background-position-y: center;
   background-size: contain;
   text-align: right;
-  margin: 0.5rem auto;
+  margin: auto 0.5rem;
   border: var(--color-dark) 2px solid;
   padding: 0.5rem;
 }
@@ -6325,7 +6325,7 @@ i {
   background-position-y: center;
   background-size: contain;
   text-align: right;
-  margin: 0.5rem auto;
+  margin: auto 0.5rem;
   border: var(--color-dark) 2px solid;
   padding: 0.5rem;
 }
@@ -6343,7 +6343,7 @@ i {
   background-position-y: center;
   background-size: contain;
   text-align: right;
-  margin: 0.5rem auto;
+  margin: auto 0.5rem;
   border: var(--color-dark) 2px solid;
   padding: 0.5rem;
 }
@@ -6374,6 +6374,14 @@ i {
     align-self: flex-start;
     max-width: 25rem;
   }
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+.links {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
