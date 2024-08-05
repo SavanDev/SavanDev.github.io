@@ -1,0 +1,15 @@
+- text: Home
+  url: /
+  icon: house
+
+- text: Drawings
+  url: /drawings/
+  icon: brush
+
+- text: Projects
+  url: /projects/
+  icon: window-stack
+
+- text: Labs
+  url: /labs/
+  icon: code-square

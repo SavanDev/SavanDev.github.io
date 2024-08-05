@@ -1,18 +1,30 @@
-<nav>
-    <a class="navbar-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
-    {% if site.showNavbar %}
-        <ul class="navbar-menu">
-            {% for pagesList in site.pages %}
-                {% if pagesList.showInNavbar %}
-                    <li><a href="{{ pagesList.url | relative_url }}">{{ pagesList.title | escape }}</a></li>
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{{ "/assets/img/squared-logo.svg" | relative_url }}" alt="SavanDev" width="42">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav col-lg-6">
+                {% for nav in site.data.navigation %}
+                <li class="nav-item">
+                    <a {% if nav.url==page.url %} class="nav-link active" aria-current="page" {% else %}
+                        class="nav-link" {% endif %} href="{{ nav.url | relative_url }}"><i class="bi bi-{{ nav.icon }}"></i> {{ nav.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="d-lg-flex col-lg-6 justify-content-lg-end">
+                {% if site.github %}
+                <a class="btn btn-primary" href="https://github.com/{{ site.github }}" role="button" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
                 {% endif %}
-            {% endfor %}
-        </ul>
-    {% endif %}
-    <ul class="navbar-right-menu">
-        {% if site.github %}
-            <li><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-		{% endif %}
-        <!--li><b>Upd:</b> {{ site.time | date: '%m/%d/%y' }}</li-->
-    </ul>
+                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon" class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+
+    </div>
 </nav>

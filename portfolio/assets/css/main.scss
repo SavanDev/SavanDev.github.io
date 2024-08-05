@@ -2,7 +2,6 @@
 ---
 @import "post";
 @import "exclusive";
-@import "drawings";
 @import "fontawesome/fontawesome";
 @import "fontawesome/solid";
 @import "fontawesome/brands";
@@ -46,55 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 
 i {
     margin: auto .2rem;
-}
-
-.drawings-button {
-    background-image: url("/assets/img/drawings/Head.png");
-    background-repeat: no-repeat;
-    background-color: #0F0000;
-    background-position-y: center;
-    background-size: contain;
-    text-align: right;
-    margin: auto .5rem;
-    border: var(--color-dark) 2px solid;
-    padding: .5rem;
-
-    &:hover {
-        background-image: url("/assets/img/drawings/Head-with-scarf.png");
-        background-color: #00000F;
-    }
-}
-
-.projects-button {
-    background-image: url("/assets/img/drawings/Chibi.png");
-    background-repeat: no-repeat;
-    background-color: #6abe30;
-    background-position-y: center;
-    background-size: contain;
-    text-align: right;
-    margin: auto .5rem;
-    border: var(--color-dark) 2px solid;
-    padding: .5rem;
-
-    > a {
-        color: white;
-
-        &:hover {
-            color: black;
-        }
-    }
-}
-
-.labs-button {
-    background-image: url("/assets/img/labs.png");
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position-y: center;
-    background-size: contain;
-    text-align: right;
-    margin: auto .5rem;
-    border: var(--color-dark) 2px solid;
-    padding: .5rem;
 }
 
 .appHome {

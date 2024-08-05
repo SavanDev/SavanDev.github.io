@@ -3,7 +3,6 @@ title: SavanDev # the name of your site, e.g. ACME Corp.
 author: SavanDev
 
 source: portfolio
-showNavbar: 1
 
 permalink: /:categories/:year/:title/
 
@@ -26,7 +25,7 @@ twitter:
   username: dylnavas36
   card: summary
 tagline: "SavanDev - My portfolio"
-url: https://savandev.github.io
+url: https://savandev.ar
 social:
   name: SavanDev
   links:

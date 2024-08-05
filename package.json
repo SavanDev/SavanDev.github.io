@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "browser-sync": "2.29.1",
+    "bs5-lightbox": "^1.8.3",
     "gh-pages": "5.0.0"
   },
   "devDependencies": {

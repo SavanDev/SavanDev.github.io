@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ site.lang | default: 'en' }}" data-bs-theme="dark">
 
 {% include head.html %}
 
 <body dark="1">
     {% include navbar.html %}
-    <article class="fluid">
-        <section class="center transparent">
+    <div class="container">
+        <!-- Gallery -->
+        <div class="row d-flex flex-wrap align-items-center mt-4">
             {% for picture in site.data.drawings reversed %}
-                <a class="drawing-post" href="{{ picture.link }}" target="_blank">
-                    <img src="{{ picture.url | relative_url }}" alt="{{ picture.name }}" title="{{ picture.name }}">
-                    <span class="drawing-social">
-                        {% if picture.social == "instagram" %}
-                            <i class="fab fa-instagram"></i>
-                        {% endif %}
-                        {% if picture.social == "twitter" %}
-                            <i class="fab fa-twitter"></i>
-                        {% endif %}
-                        {% if picture.social == "newgrounds" %}
-                            <i class="fas fa-square"></i>
-                        {% endif %}
-                        {% if picture.social == "dream" %}
-                            <i class="fas fa-globe"></i>
-                        {% endif %}
-                    </span>
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="{{ picture.link }}" target="_blank">
+                    <img src="{{ picture.url | relative_url }}"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="{{ picture.name }}" title="{{ picture.name }}"/>
                 </a>
+            </div>
             {% endfor %}
-        </section>
-    </article>
+        </div>
+        <!-- Gallery -->
+    </div>
     {% include footer.html %}
 </body>
 </html>
