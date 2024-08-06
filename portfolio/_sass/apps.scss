@@ -1,28 +1,19 @@
-.appItem {
-    display: inline-block;
-    margin: .5rem;
-    background-color: var(--color-dark);
-    border-radius: .5rem;
-    border: 2px solid var(--color-muted);
-
-    transition: transform .2s;
-
-    &:hover {
-        transform: scale(1.1);
-    }
+.appCard {
+    max-width: 540px;
 }
 
 .appImg {
-    max-width: 72px;
+    width: 180px;
 }
 
-.appText {
-    display: block;
-    font-weight: bold;
-}
-
-.appPlatform {
-    display: block;
-    padding: .25rem;
-    width: fit-content;
+@media screen and (min-width: 1200px) {
+    .appContent {
+            position: relative;
+        }
+    
+        .appFooter {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
 }

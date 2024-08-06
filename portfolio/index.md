@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Welcome!
+title: Home
 description: SavanDev stuff here, all in this page!
-image: /assets/img/logo.png
+image: /assets/img/squared-logo.svg
 
 os: Windows 11 (<b>WSL:</b> Arch Linux)
 cpu: AMD Ryzen 5 1600 AF (3.2 GHz)

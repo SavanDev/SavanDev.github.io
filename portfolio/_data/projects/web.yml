@@ -1,0 +1,6 @@
+- name: Cleanify Design
+  languages: ['English']
+  version: 2.2
+  imageUrl: /assets/img/cleanify.svg
+  url: https://savandev.ar/cleanify-design/
+  platform: ["web"]

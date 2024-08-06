@@ -1,0 +1,62 @@
+- name: Proof of Work - OVERLOADED!
+  languages: ['English']
+  version: 0.7
+  imageUrl: /assets/img/pow.png
+  url: https://savandev.itch.io/proof-of-work-overloaded
+  platform: ["windows", "linux", "web"]
+
+- name: CreepyCraft (2019 Edition)
+  languages: ['English', 'Spanish', 'Russian']
+  version: 0.3.1-DEMO
+  imageUrl: /assets/img/creepycraft.png
+  url: https://gamejolt.com/games/creepycraft/20336
+  platform: ["windows"]
+
+- name: Cube SCP-087
+  languages: ['English']
+  version: 1.3.21
+  imageUrl: /assets/img/cubescp.png
+  url: https://savandev.itch.io/cube-scp-087
+  platform: ["windows", "linux"]
+
+- name: A Bad Dream
+  languages: ['English']
+  version: 1.0
+  imageUrl: /assets/img/NewDream.png
+  url: https://gamejolt.com/games/a-bad-dream/503947
+  platform: ["windows", "linux"]
+
+- name: The Deal
+  languages: ['English', 'Spanish']
+  version: 1.1
+  imageUrl: /assets/img/thedeal.png
+  url: https://savandev.itch.io/the-deal
+  platform: ["windows"]
+
+- name: Blue's Adventure
+  languages: ['English']
+  version: 1.0-dev b35
+  imageUrl: /assets/img/blueAdventure.png
+  url: https://savandev.itch.io/blue-adventures
+  platform: ["windows"]
+
+- name: Retro Shooter
+  languages: ['English']
+  version: 1.1
+  imageUrl: /assets/img/retroshooter.png
+  url: https://savandev.itch.io/retro-shooter
+  platform: ["windows", "linux"]
+
+- name: Latin American needs... GRAPE SODA!
+  languages: ['English']
+  version: 0.1.5-alpha
+  imageUrl: /assets/img/grapeSoda.png
+  url: https://savandev.itch.io/grapesoda
+  platform: ["web", "windows", "linux"]
+
+- name: ColorLess
+  languages: ['English']
+  version: 1.1
+  imageUrl: /assets/img/colorless.png
+  url: https://savandev.itch.io/colorless
+  platform: ["windows", "linux"]

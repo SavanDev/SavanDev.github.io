@@ -1,36 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ site.lang | default: 'en' }}" data-bs-theme="dark">
 
 {% include head.html %}
 
-<body dark="1">
+<body>
     {% include navbar.html %}
-    <article class="grid fluid">
-        <section class="transparent labsMenu">
-            <h2>Labs</h2>
-            {% for category in site.categories %}
-                <h5>{{ category[0] }}</h5>
-                <ul>
-                    {% for post in category[1] %}
-                        {% if post.layout == "labs" %}
-                        <li>
-                            <a href="{{ post.url | relative_url }}">
-                                {{ post.title }}
-                            </a>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            {% endfor %}
-        </section>
-        <section class="dashed">
-            {% if page.showTitle %}
-            <h2>{{ page.title }}</h2>
-            {% endif %}
-
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
             {{ content }}
-        </section>
-    </article>
+        </div>
+    </div>
     {% include footer.html %}
 </body>
 </html>
