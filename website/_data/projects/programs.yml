@@ -1,0 +1,13 @@
+- name: Float Folder
+  languages: ['English']
+  version: 1.0
+  imageUrl: https://github.com/SavanDev/FloatFolder/raw/master/FloatFolder/Resources/FloatFolder.png
+  url: https://github.com/SavanDev/FloatFolder/releases
+  platform: ["windows"]
+
+- name: OGG to MP3 Converter
+  languages: ['English', 'Spanish']
+  version: 1.1
+  imageUrl: assets/img/ogg.jpg
+  url: https://github.com/SavanDev/OggMp3Converter
+  platform: ["windows"]

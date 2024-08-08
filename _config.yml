@@ -2,7 +2,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: SavanDev # the name of your site, e.g. ACME Corp.
 author: SavanDev
 
-source: portfolio
+source: website
 
 permalink: /:categories/:year/:title/
 

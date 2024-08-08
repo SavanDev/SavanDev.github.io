@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}" data-bs-theme="dark">
+
+{% include head.html %}
+
+<body>
+    {% include navbar.html %}
+    <div class="container">
+        <!-- Gallery -->
+        <div class="row d-flex flex-wrap align-items-center justify-content-center">
+            {% for picture in site.data.drawings reversed %}
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="{{ 'assets/img/drawings/' | relative_url }}{{ picture.fileName }}" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="{{ 'assets/img/drawings/thumbnail/' | relative_url }}{{ picture.fileName }}" class="card-img-top" alt="{{ picture.name }}" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                {% if picture.social == "instagram" %}
+                                <i class="fab fa-instagram"></i>
+                                {% endif %}
+                                {% if picture.social == "twitter" %}
+                                <i class="fab fa-twitter"></i>
+                                {% endif %}
+                                {% if picture.social == "newgrounds" %}
+                                <i class="fas fa-square"></i>
+                                {% endif %}
+                                {% if picture.social == "dream" %}
+                                <i class="fas fa-globe"></i>
+                                {% endif %}
+                            </span>
+                            <a href="{{ picture.link }}" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Gallery -->
+    </div>
+    {% include footer.html %}
+</body>
+</html>

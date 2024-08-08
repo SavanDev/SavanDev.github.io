@@ -8,7 +8,7 @@ import ts from 'gulp-typescript';
 /*const cleanifyCSS = './node_modules/cleanify-design/dist/css/cleanify.css';
 const cleanifyJS = './node_modules/cleanify-design/dist/js/cleanify.js';*/
 const siteRoot = '_site';
-const siteSourceDir = 'portfolio';
+const siteSourceDir = 'website';
 
 /*function copyCleanifyFiles()
 {
