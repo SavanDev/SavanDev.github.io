@@ -1,6 +1,6 @@
 ---
 layout: drawings
 title: Drawings
-description: All my drawings in one place! ;)
-image: /assets/img/drawings/Chara.png
+description: In this section you will find all the drawings that I have published on my social networks.
+image: /assets/img/drawings/NewDylan.png
 ---

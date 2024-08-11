@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Home
-description: SavanDev stuff here, all in this page!
-image: /assets/img/squared-logo.svg
+description: I make pixel art, games, apps and web stuff (like this)
+image: /assets/img/logo-back.png
 
 os: Windows 11 (<b>WSL:</b> Arch Linux)
 cpu: AMD Ryzen 5 1600 AF (3.2 GHz)

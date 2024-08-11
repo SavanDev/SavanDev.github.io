@@ -1,6 +1,6 @@
 ---
 layout: apps
 title: Projects
-description: You can see all my projects here! :D
-image: /assets/img/drawings/DylanFanta.jpg
+description: All the projects I've published over time (games, apps, frameworks, etc.).
+image: /assets/img/drawings/NewDream.png
 ---

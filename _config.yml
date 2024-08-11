@@ -1,5 +1,5 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-title: SavanDev # the name of your site, e.g. ACME Corp.
+title: Savan # the name of your site, e.g. ACME Corp.
 author: SavanDev
 
 source: website
@@ -24,12 +24,12 @@ plugins:
 twitter:
   username: dylnavas36
   card: summary
-tagline: "SavanDev - My portfolio"
+tagline: "Welcome, I'm Savan!"
 url: https://savandev.ar
 social:
   name: SavanDev
   links:
     - https://twitter.com/dylnavas36
     - https://github.com/SavanDev
-logo: /assets/img/logo.png
+logo: /assets/img/logo-back.png
 github: SavanDev
