@@ -1,144 +1,3 @@
-.post .post-details {
-  max-width: 18rem;
-  margin-bottom: 0;
-}
-.post .post-logo {
-  border: 2px solid var(--color-muted);
-  border-radius: 0.5rem;
-  background-color: var(--color-dark);
-  padding: 0.5rem;
-  width: 15rem;
-  margin: 0.5rem 1.5rem;
-}
-.post .post-info {
-  display: inline-block;
-  vertical-align: top;
-  margin: 1rem auto;
-  width: calc(100% - 19rem);
-}
-.post .post-info .post-title {
-  display: inline-block;
-  vertical-align: middle;
-}
-.post .post-info #platforms {
-  display: inline-block;
-}
-.post #trailer {
-  display: block;
-  margin: auto 1rem 1rem 1rem;
-}
-.post #preview {
-  display: block;
-  margin: auto auto 1rem auto;
-  border: 2px solid #fff;
-  border-radius: 0.5rem;
-}
-
-.bi:hover svg {
-  fill: white;
-}
-
-svg {
-  fill: #fff;
-}
-
-.post-content blockquote {
-  margin: 1rem auto !important;
-}
-
-.post-desc {
-  text-align: center;
-  padding: 0.75rem;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.exclusive section:first-child {
-  max-width: 13rem;
-}
-.exclusive section:first-child img {
-  width: 100%;
-}
-.exclusive section:last-child {
-  max-width: 18rem;
-  min-height: 13rem;
-}
-.exclusive .post-logo {
-  border: 2px solid var(--color-muted);
-  border-radius: 0.5rem;
-  background-color: var(--color-dark);
-  padding: 0.5rem;
-}
-.exclusive #platforms {
-  display: inline-block;
-  width: fit-content;
-}
-.exclusive #platforms #noRelease > * {
-  color: darkred;
-  fill: darkred;
-}
-.exclusive .language {
-  background-color: var(--color-primary);
-  margin-left: 0.25rem;
-  padding: 0.5rem;
-  border-radius: 1rem;
-}
-.exclusive ol {
-  width: 95%;
-}
-
-#contentFrame {
-  display: block;
-  margin: 1rem auto;
-  width: 100%;
-}
-#contentFrame iframe {
-  border-radius: 1rem;
-  width: 100%;
-}
-
-.ex-description {
-  padding-top: 0;
-}
-
-.drawing-post {
-  display: inline-block;
-  text-align: center;
-  max-width: 144px;
-  max-height: 176px;
-  margin: 0.5rem;
-  background-color: var(--color-dark);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 2px solid var(--color-muted);
-  transition: transform 0.2s;
-}
-.drawing-post > img {
-  width: 108px;
-  height: 108px;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-.drawing-post > .drawing-social {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-top: 0.5rem;
-}
-.drawing-post:hover {
-  border: 2px solid var(--color-primary);
-  transform: scale(1.25);
-}
-
-.drawings-title > svg {
-  width: 48px;
-  margin-bottom: 0.5rem;
-  vertical-align: middle;
-  margin-right: 0;
-  height: 32px;
-}
-
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6236,33 +6095,24 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.appItem {
-  display: inline-block;
-  margin: 0.5rem;
-  background-color: var(--color-dark);
-  border-radius: 0.5rem;
-  border: 2px solid var(--color-muted);
-  transition: transform 0.2s;
-}
-.appItem:hover {
-  transform: scale(1.1);
+.appCard {
+  max-width: 540px;
 }
 
 .appImg {
-  max-width: 72px;
+  width: 180px;
 }
 
-.appText {
-  display: block;
-  font-weight: bold;
+@media screen and (min-width: 1200px) {
+  .appContent {
+    position: relative;
+  }
+  .appFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
-
-.appPlatform {
-  display: block;
-  padding: 0.25rem;
-  width: fit-content;
-}
-
 @font-face {
   font-family: TechnaSans;
   src: url(/assets/fonts/TechnaSans-Regular.otf);
@@ -6300,52 +6150,6 @@ h1, h2, h3, h4, h5, h6 {
 
 i {
   margin: auto 0.2rem;
-}
-
-.drawings-button {
-  background-image: url("/assets/img/drawings/Head.png");
-  background-repeat: no-repeat;
-  background-color: #0F0000;
-  background-position-y: center;
-  background-size: contain;
-  text-align: right;
-  margin: auto 0.5rem;
-  border: var(--color-dark) 2px solid;
-  padding: 0.5rem;
-}
-.drawings-button:hover {
-  background-image: url("/assets/img/drawings/Head-with-scarf.png");
-  background-color: #00000F;
-}
-
-.projects-button {
-  background-image: url("/assets/img/drawings/Chibi.png");
-  background-repeat: no-repeat;
-  background-color: #6abe30;
-  background-position-y: center;
-  background-size: contain;
-  text-align: right;
-  margin: auto 0.5rem;
-  border: var(--color-dark) 2px solid;
-  padding: 0.5rem;
-}
-.projects-button > a {
-  color: white;
-}
-.projects-button > a:hover {
-  color: black;
-}
-
-.labs-button {
-  background-image: url("/assets/img/labs.png");
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position-y: center;
-  background-size: contain;
-  text-align: right;
-  margin: auto 0.5rem;
-  border: var(--color-dark) 2px solid;
-  padding: 0.5rem;
 }
 
 .appHome {

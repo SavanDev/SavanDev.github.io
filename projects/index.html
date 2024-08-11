@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="/assets/img/Chesspawn.png">
     <title>Projects - SavanDev</title>
-    <link rel="stylesheet" href="/assets/css/cleanify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link rel="stylesheet" href="/assets/css/cleanify.css"-->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Projects | SavanDev</title>
@@ -16,414 +18,793 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="You can see all my projects here! :D" />
 <meta property="og:description" content="You can see all my projects here! :D" />
-<link rel="canonical" href="https://savandev.github.io/projects/" />
-<meta property="og:url" content="https://savandev.github.io/projects/" />
+<link rel="canonical" href="https://savandev.ar/projects/" />
+<meta property="og:url" content="https://savandev.ar/projects/" />
 <meta property="og:site_name" content="SavanDev" />
-<meta property="og:image" content="https://savandev.github.io/assets/img/drawings/DylanFanta.jpg" />
+<meta property="og:image" content="https://savandev.ar/assets/img/drawings/DylanFanta.jpg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:image" content="https://savandev.github.io/assets/img/drawings/DylanFanta.jpg" />
+<meta property="twitter:image" content="https://savandev.ar/assets/img/drawings/DylanFanta.jpg" />
 <meta property="twitter:title" content="Projects" />
 <meta name="twitter:site" content="@dylnavas36" />
 <meta name="twitter:creator" content="@SavanDev" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"SavanDev"},"description":"You can see all my projects here! :D","headline":"Projects","image":"https://savandev.github.io/assets/img/drawings/DylanFanta.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.github.io/assets/img/logo.png"},"name":"SavanDev"},"url":"https://savandev.github.io/projects/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"SavanDev"},"description":"You can see all my projects here! :D","headline":"Projects","image":"https://savandev.ar/assets/img/drawings/DylanFanta.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.ar/assets/img/logo.png"},"name":"SavanDev"},"url":"https://savandev.ar/projects/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
-<body dark="1">
-    <nav>
-    <a class="navbar-title" href="/">SavanDev</a>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/squared-logo.svg" alt="SavanDev" width="42">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav col-lg-6">
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/"><i class="bi bi-house"></i> Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/drawings/"><i class="bi bi-brush"></i> Drawings</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a  class="nav-link active" aria-current="page"  href="/projects/"><i class="bi bi-window-stack"></i> Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/labs/"><i class="bi bi-code-square"></i> Labs</a>
+                </li>
+                
+            </ul>
+            <div class="d-lg-flex col-lg-6 justify-content-lg-end">
+                
+                <a class="btn btn-primary" href="https://github.com/SavanDev" role="button" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                
+                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon" class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+
+    </div>
+</nav>
+    <div class="container">
+        <div class="accordion" id="accordionFlushList">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-apps" aria-expanded="false" aria-controls="flush-apps">
+                        apps
+                    </button>
+                </h2>
+                <div id="flush-apps" class="accordion-collapse collapse" data-bs-parent="#accordionFlushList">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://github.com/SavanDev/FloatFolder/releases">
+                                                <img src="https://github.com/SavanDev/FloatFolder/raw/master/FloatFolder/Resources/FloatFolder.png" class="img-fluid rounded-start appImg"
+                                                    alt="Float Folder">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Float Folder</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.0</span>
+                                                </p>
+                                                <a href="https://github.com/SavanDev/FloatFolder/releases" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://github.com/SavanDev/OggMp3Converter">
+                                                <img src="/assets/img/ogg.jpg" class="img-fluid rounded-start appImg"
+                                                    alt="OGG to MP3 Converter">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">OGG to MP3 Converter</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <span class="badge text-bg-secondary">Spanish</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.1</span>
+                                                </p>
+                                                <a href="https://github.com/SavanDev/OggMp3Converter" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-frameworks" aria-expanded="false" aria-controls="flush-frameworks">
+                        frameworks
+                    </button>
+                </h2>
+                <div id="flush-frameworks" class="accordion-collapse collapse" data-bs-parent="#accordionFlushList">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.ar/cleanify-design/">
+                                                <img src="/assets/img/cleanify.svg" class="img-fluid rounded-start appImg"
+                                                    alt="Cleanify Design">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Cleanify Design</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">2.2</span>
+                                                </p>
+                                                <a href="https://savandev.ar/cleanify-design/" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-firefox"></i>
+                                                <i class="fab fa-chrome"></i>
+                                                <i class="fab fa-edge"></i>
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-games" aria-expanded="false" aria-controls="flush-games">
+                        games
+                    </button>
+                </h2>
+                <div id="flush-games" class="accordion-collapse collapse" data-bs-parent="#accordionFlushList">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/proof-of-work-overloaded">
+                                                <img src="/assets/img/pow.png" class="img-fluid rounded-start appImg"
+                                                    alt="Proof of Work - OVERLOADED!">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Proof of Work - OVERLOADED!</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">0.7</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/proof-of-work-overloaded" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-linux"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-firefox"></i>
+                                                <i class="fab fa-chrome"></i>
+                                                <i class="fab fa-edge"></i>
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://gamejolt.com/games/creepycraft/20336">
+                                                <img src="/assets/img/creepycraft.png" class="img-fluid rounded-start appImg"
+                                                    alt="CreepyCraft (2019 Edition)">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">CreepyCraft (2019 Edition)</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <span class="badge text-bg-secondary">Spanish</span>
+                                                    
+                                                    <span class="badge text-bg-secondary">Russian</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">0.3.1-DEMO</span>
+                                                </p>
+                                                <a href="https://gamejolt.com/games/creepycraft/20336" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/cube-scp-087">
+                                                <img src="/assets/img/cubescp.png" class="img-fluid rounded-start appImg"
+                                                    alt="Cube SCP-087">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Cube SCP-087</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.3.21</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/cube-scp-087" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-linux"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://gamejolt.com/games/a-bad-dream/503947">
+                                                <img src="/assets/img/NewDream.png" class="img-fluid rounded-start appImg"
+                                                    alt="A Bad Dream">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">A Bad Dream</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.0</span>
+                                                </p>
+                                                <a href="https://gamejolt.com/games/a-bad-dream/503947" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-linux"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/the-deal">
+                                                <img src="/assets/img/thedeal.png" class="img-fluid rounded-start appImg"
+                                                    alt="The Deal">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">The Deal</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <span class="badge text-bg-secondary">Spanish</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.1</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/the-deal" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/blue-adventures">
+                                                <img src="/assets/img/blueAdventure.png" class="img-fluid rounded-start appImg"
+                                                    alt="Blue's Adventure">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Blue's Adventure</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.0-dev b35</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/blue-adventures" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/retro-shooter">
+                                                <img src="/assets/img/retroshooter.png" class="img-fluid rounded-start appImg"
+                                                    alt="Retro Shooter">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Retro Shooter</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.1</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/retro-shooter" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-linux"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/grapesoda">
+                                                <img src="/assets/img/grapeSoda.png" class="img-fluid rounded-start appImg"
+                                                    alt="Latin American needs... GRAPE SODA!">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Latin American needs... GRAPE SODA!</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">0.1.5-alpha</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/grapesoda" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-firefox"></i>
+                                                <i class="fab fa-chrome"></i>
+                                                <i class="fab fa-edge"></i>
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-linux"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://savandev.itch.io/colorless">
+                                                <img src="/assets/img/colorless.png" class="img-fluid rounded-start appImg"
+                                                    alt="ColorLess">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">ColorLess</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.1</span>
+                                                </p>
+                                                <a href="https://savandev.itch.io/colorless" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                <i class="fab fa-windows"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-linux"></i>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-web" aria-expanded="false" aria-controls="flush-web">
+                        web
+                    </button>
+                </h2>
+                <div id="flush-web" class="accordion-collapse collapse" data-bs-parent="#accordionFlushList">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                            
+                            <div class="col">
+                                <div class="card mb-2 mx-auto appCard">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                            <a href="https://github.com/SavanDev/Minecraft-Avatar-in-PHP">
+                                                <img src="https://crafatar.com/avatars/cd6afb44e94c4d6280d2f2aebafc5f7b" class="img-fluid rounded-start appImg"
+                                                    alt="Minecraft Avatar in PHP">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 appContent">
+                                            <div class="card-body clearfix">
+                                                <h5 class="card-title mb-1">Minecraft Avatar in PHP</h5>
+                                                <p class="card-text mb-1">
+                                                    <b>Languages: </b>
+                                                    
+                                                    <span class="badge text-bg-secondary">English</span>
+                                                    
+                                                    <br />
+                                                    <b>Version: </b>
+                                                    <span class="badge text-bg-secondary">1.0</span>
+                                                </p>
+                                                <a href="https://github.com/SavanDev/Minecraft-Avatar-in-PHP" class="btn btn-primary btn-sm">Visit it!</a>
+                                            </div>
+                                            <div class="card-footer text-body-secondary appFooter">
+                                                Available for
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <i class="fab fa-firefox"></i>
+                                                <i class="fab fa-chrome"></i>
+                                                <i class="fab fa-edge"></i>
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--h1 id="" class="display-5 text-center text-capitalize"></h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            
+        </div>
+        <hr>
+        <nav>
+            <ul class="pagination">
+                
+                <li class="page-item"><a class="page-link text-capitalize" href="#apps">apps</a></li>
+                
+                <li class="page-item"><a class="page-link text-capitalize" href="#frameworks">frameworks</a></li>
+                
+                <li class="page-item"><a class="page-link text-capitalize" href="#games">games</a></li>
+                
+                <li class="page-item"><a class="page-link text-capitalize" href="#web">web</a></li>
+                
+            </ul>
+        </nav-->
+    </div>
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">SavanDev - <b>2016 / 2024</b></span>
+        </div>
     
-        <ul class="navbar-menu">
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://twitter.com/dylnavas36">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </li>
             
-                
-                    <li><a href="/drawings/">Drawings</a></li>
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
             
-                
-            
-                
-                    <li><a href="/labs/">Labs</a></li>
-                
-            
-                
-            
-                
-                    <li><a href="/projects/">Projects</a></li>
-                
-            
-                
-            
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SavanDev">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
             
         </ul>
-    
-    <ul class="navbar-right-menu">
-        
-            <li><a href="https://github.com/SavanDev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-		
-        <!--li><b>Upd:</b> 04/27/24</li-->
-    </ul>
-</nav>
-    <article class="fluid">
-        
-            <section class="transparent appsContainer">
-                <h2>Games</h2>
-                
-                    
-                
-                    
-                
-                    
-                    <a class="appItem" href="/games/2022/proof-of-work/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/pow.png" alt="Proof of Work - OVERLOADED!">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Proof of Work - OVERLOADED!</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        <i class="fab fa-linux"></i>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2021/colorless/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/colorless.png" alt="ColorLess">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">ColorLess</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        <i class="fab fa-linux"></i>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2021/grapesoda/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/grapeSoda.png" alt="Latin American needs... GRAPE SODA!">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Latin American needs... GRAPE SODA!</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
-                                        
-                                        
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        <i class="fab fa-linux"></i>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2020/retroshooter/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/retroshooter.png" alt="Retro Shooter">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Retro Shooter</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        <i class="fab fa-linux"></i>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2020/blueadventure/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/blueAdventure.png" alt="Blue's Adventure">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Blue's Adventure</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2020/thedeal/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/thedeal.png" alt="The Deal">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">The Deal</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2020/a-bad-dream/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/NewDream.png" alt="A Bad Dream">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">A Bad Dream</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        <i class="fab fa-linux"></i>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2019/cube-scp087/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/cubescp.png" alt="Cube SCP-087">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Cube SCP-087</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        <i class="fab fa-linux"></i>
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-                    
-                    <a class="appItem" href="/games/2019/creepycraft/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/creepycraft.png" alt="CreepyCraft (2019 Edition)">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">CreepyCraft (2019 Edition)</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-            </section>
-        
-            <section class="transparent appsContainer">
-                <h2>Web</h2>
-                
-                    
-                    <a class="appItem" href="/web/2019/cleanify/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="/assets/img/cleanify.svg" alt="Cleanify Design">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Cleanify Design</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        <i class="fab fa-firefox"></i><i class="fab fa-chrome"></i><i class="fab fa-edge"></i>
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-            </section>
-        
-            <section class="transparent appsContainer">
-                <h2>Programs</h2>
-                
-                    
-                    <a class="appItem" href="/programs/2020/float-folder/">
-                        <article class="grid">
-                            <section class="appImg transparent">
-                                <img src="https://github.com/SavanDev/FloatFolder/raw/master/FloatFolder/Resources/FloatFolder.png" alt="Float Folder">
-                            </section>
-                            <section class="transparent">
-                                <p class="appText">Float Folder</p>
-                                <p class="appPlatform alert-muted">
-                                    
-                                        
-                                        <i class="fab fa-windows"></i>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                </p>
-                            </section>
-                        </article>
-                    </a>
-                    
-                
-            </section>
-        
-    </article>
-    <footer>
-    <p>SavanDev - 2016 / 2024</p>
-</footer>
-<script src="/assets/js/cleanify.js"></script>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--script src="/assets/js/cleanify.js"></script-->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 <script src="/assets/js/index.js"></script>
 
 </body>
+
 </html>

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="/assets/img/Chesspawn.png">
     <title>Drawings - SavanDev</title>
-    <link rel="stylesheet" href="/assets/css/cleanify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link rel="stylesheet" href="/assets/css/cleanify.css"-->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Drawings | SavanDev</title>
@@ -16,558 +18,1054 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="All my drawings in one place! ;)" />
 <meta property="og:description" content="All my drawings in one place! ;)" />
-<link rel="canonical" href="https://savandev.github.io/drawings/" />
-<meta property="og:url" content="https://savandev.github.io/drawings/" />
+<link rel="canonical" href="https://savandev.ar/drawings/" />
+<meta property="og:url" content="https://savandev.ar/drawings/" />
 <meta property="og:site_name" content="SavanDev" />
-<meta property="og:image" content="https://savandev.github.io/assets/img/drawings/Chara.png" />
+<meta property="og:image" content="https://savandev.ar/assets/img/drawings/Chara.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:image" content="https://savandev.github.io/assets/img/drawings/Chara.png" />
+<meta property="twitter:image" content="https://savandev.ar/assets/img/drawings/Chara.png" />
 <meta property="twitter:title" content="Drawings" />
 <meta name="twitter:site" content="@dylnavas36" />
 <meta name="twitter:creator" content="@SavanDev" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"SavanDev"},"description":"All my drawings in one place! ;)","headline":"Drawings","image":"https://savandev.github.io/assets/img/drawings/Chara.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.github.io/assets/img/logo.png"},"name":"SavanDev"},"url":"https://savandev.github.io/drawings/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"SavanDev"},"description":"All my drawings in one place! ;)","headline":"Drawings","image":"https://savandev.ar/assets/img/drawings/Chara.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.ar/assets/img/logo.png"},"name":"SavanDev"},"url":"https://savandev.ar/drawings/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
-<body dark="1">
-    <nav>
-    <a class="navbar-title" href="/">SavanDev</a>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/squared-logo.svg" alt="SavanDev" width="42">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav col-lg-6">
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/"><i class="bi bi-house"></i> Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a  class="nav-link active" aria-current="page"  href="/drawings/"><i class="bi bi-brush"></i> Drawings</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/projects/"><i class="bi bi-window-stack"></i> Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/labs/"><i class="bi bi-code-square"></i> Labs</a>
+                </li>
+                
+            </ul>
+            <div class="d-lg-flex col-lg-6 justify-content-lg-end">
+                
+                <a class="btn btn-primary" href="https://github.com/SavanDev" role="button" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                
+                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon" class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+
+    </div>
+</nav>
+    <div class="container">
+        <!-- Gallery -->
+        <div class="row d-flex flex-wrap align-items-center justify-content-center">
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/chika.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/chika.png" class="card-img-top" alt="Chika" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1784062509684572671" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/kaguyita.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/kaguyita.png" class="card-img-top" alt="Kaguyita" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1784062358744097039" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Milei2023.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Milei2023.png" class="card-img-top" alt="Milei (2023)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1773583969130319983" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/tired.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/tired.png" class="card-img-top" alt="Tired" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1747821793446924654" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0007.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0007.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1671369085857177602" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0006.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0006.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1664396475441242112" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0005.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0005.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1661940896642875393" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0004.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0004.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1659004081074053121" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0003.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0003.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1656310289246171136" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0002.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0002.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1654587303623290880" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dream-0001.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dream-0001.png" class="card-img-top" alt="Dream" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                
+                                <i class="fas fa-globe"></i>
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1653526504398114817" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/NewDylan.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/NewDylan.png" class="card-img-top" alt="Me (BluePhoenix)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1784027533530243247" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Tails.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Tails.png" class="card-img-top" alt="Needlemouse Tails" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1558802914222768129" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Lombriz.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Lombriz.png" class="card-img-top" alt="Lombriz Espacial" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1506855381577916417" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Thanshunny.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Thanshunny.png" class="card-img-top" alt="Thanshunny" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1506515709823701013" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/TGF.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/TGF.png" class="card-img-top" alt="Trollge GF" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1489356593229611009" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/ohno-export.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/ohno-export.png" class="card-img-top" alt="FNF x Grape Soda" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1485420105777532928" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Stegosaurus.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Stegosaurus.png" class="card-img-top" alt="Stegosaurus" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/Manuel2Code/status/1481452443506405376" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Thresh.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Thresh.png" class="card-img-top" alt="Thresh (LOL)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1467621635738030084" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Ika.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Ika.png" class="card-img-top" alt="Ika Musume (Squid Girl!)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1467150450008936450" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Head-Christmas.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Head-Christmas.png" class="card-img-top" alt="Christmas" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1467000450675355648" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/QT.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/QT.png" class="card-img-top" alt="FNF (QT Mod)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1440891083135856640" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/FNF.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/FNF.png" class="card-img-top" alt="FNF (Evil Mod)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1424155139867353088" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Spirit.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Spirit.png" class="card-img-top" alt="Spirit (OC)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1409033092606705664" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Isaac.gif" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Isaac.gif" class="card-img-top" alt="Isaac with Rotten Baby" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1407127813182869505" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Head-with-scarf.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Head-with-scarf.png" class="card-img-top" alt="Me with scarf (OC)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1404311335169531904" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/NewDream.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/NewDream.png" class="card-img-top" alt="A Bad Dream (Recreation)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1402817542213836801" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Head.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Head.png" class="card-img-top" alt="Me (OC)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1401034283226218497" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/DylanCringe.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/DylanCringe.png" class="card-img-top" alt="Dylan (Grape Soda)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1784025612878819737" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Cashier.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Cashier.png" class="card-img-top" alt="Cashier" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1784025612878819737" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Watanoge.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Watanoge.png" class="card-img-top" alt="Watanoge" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1393398701578670081" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Madotsuki.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Madotsuki.png" class="card-img-top" alt="Madotsuki" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                <i class="fas fa-square"></i>
+                                
+                                
+                            </span>
+                            <a href="https://www.newgrounds.com/art/view/savandev/madotsuki-yume-nikki" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Twitter120.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Twitter120.png" class="card-img-top" alt="Twitter (120 followers!)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/dylnavas36/status/1386521813753155584" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/FantaUva.gif" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/FantaUva.gif" class="card-img-top" alt="Fanta Uva" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1784024645345116426" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Chibi.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Chibi.png" class="card-img-top" alt="Chibi" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1783718390151975382" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Coffe.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Coffe.png" class="card-img-top" alt="Coffe" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1783718226737717277" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Niko.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Niko.png" class="card-img-top" alt="Niko (OneShot)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                
+                                <i class="fas fa-square"></i>
+                                
+                                
+                            </span>
+                            <a href="https://www.newgrounds.com/art/view/savandev/niko-oneshot" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/FriskNeutral.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/FriskNeutral.png" class="card-img-top" alt="Frisk (Neutral)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1783710096049975717" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Frisk.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Frisk.png" class="card-img-top" alt="Frisk" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1783708166368194660" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Chara.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Chara.png" class="card-img-top" alt="Chara" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1783708166368194660" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <a href="/assets/img/drawings/Dylan.png" data-toggle="lightbox" data-gallery="draws-gallery">
+                        <img src="/assets/img/drawings/thumbnail/Dylan.png" class="card-img-top" alt="Dylan (Genocide)" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text hstack gap-1">
+                            <span>Published on</span>
+                            <span class="drawing-social">
+                                
+                                
+                                <i class="fab fa-twitter"></i>
+                                
+                                
+                                
+                            </span>
+                            <a href="https://twitter.com/PhoenixBlue36/status/1783708166368194660" class="btn btn-primary btn-sm ms-auto">Visit it!</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- Gallery -->
+    </div>
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">SavanDev - <b>2016 / 2024</b></span>
+        </div>
     
-        <ul class="navbar-menu">
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://twitter.com/dylnavas36">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </li>
             
-                
-                    <li><a href="/drawings/">Drawings</a></li>
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
             
-                
-            
-                
-                    <li><a href="/labs/">Labs</a></li>
-                
-            
-                
-            
-                
-                    <li><a href="/projects/">Projects</a></li>
-                
-            
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SavanDev">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
             
         </ul>
-    
-    <ul class="navbar-right-menu">
-        
-            <li><a href="https://github.com/SavanDev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-		
-        <!--li><b>Upd:</b> 04/27/24</li-->
-    </ul>
-</nav>
-    <article class="fluid">
-        <section class="center transparent">
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1784062509684572671" target="_blank">
-                    <img src="/assets/img/drawings/chika.png" alt="Chika" title="Chika">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1784062358744097039" target="_blank">
-                    <img src="/assets/img/drawings/kaguyita.png" alt="Kaguyita" title="Kaguyita">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1773583969130319983" target="_blank">
-                    <img src="/assets/img/drawings/milei.png" alt="Milei (2023)" title="Milei (2023)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1747821793446924654" target="_blank">
-                    <img src="/assets/img/drawings/tired.png" alt="Tired" title="Tired">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1671369085857177602" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0007.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1664396475441242112" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0006.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1661940896642875393" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0005.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1659004081074053121" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0004.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1656310289246171136" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0003.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1654587303623290880" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0002.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1653526504398114817" target="_blank">
-                    <img src="/assets/img/drawings/Dream-0001.png" alt="Dream" title="Dream">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                        
-                            <i class="fas fa-globe"></i>
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1784027533530243247" target="_blank">
-                    <img src="/assets/img/drawings/NewDylan.png" alt="Me (BluePhoenix)" title="Me (BluePhoenix)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1558802914222768129" target="_blank">
-                    <img src="/assets/img/drawings/Tails.png" alt="Needlemouse Tails" title="Needlemouse Tails">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1506855381577916417" target="_blank">
-                    <img src="/assets/img/drawings/Lombriz.png" alt="Lombriz Espacial" title="Lombriz Espacial">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1506515709823701013" target="_blank">
-                    <img src="/assets/img/drawings/Thanshunny.png" alt="Thanshunny" title="Thanshunny">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1489356593229611009" target="_blank">
-                    <img src="/assets/img/drawings/TGF.png" alt="Trollge GF" title="Trollge GF">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1485420105777532928" target="_blank">
-                    <img src="/assets/img/drawings/ohno-export.png" alt="FNF x Grape Soda" title="FNF x Grape Soda">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/Manuel2Code/status/1481452443506405376" target="_blank">
-                    <img src="/assets/img/drawings/Stegosaurus.png" alt="Stegosaurus" title="Stegosaurus">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1467621635738030084" target="_blank">
-                    <img src="/assets/img/drawings/Thresh.png" alt="Thresh (LOL)" title="Thresh (LOL)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1467150450008936450" target="_blank">
-                    <img src="/assets/img/drawings/Ika.png" alt="Ika Musume (Squid Girl!)" title="Ika Musume (Squid Girl!)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1467000450675355648" target="_blank">
-                    <img src="/assets/img/drawings/Head-Christmas.png" alt="Christmas" title="Christmas">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1440891083135856640" target="_blank">
-                    <img src="/assets/img/drawings/QT-Test.png" alt="FNF (QT Mod)" title="FNF (QT Mod)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1424155139867353088" target="_blank">
-                    <img src="/assets/img/drawings/FNFv3.png" alt="FNF (Evil Mod)" title="FNF (Evil Mod)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1409033092606705664" target="_blank">
-                    <img src="/assets/img/drawings/Spirit.png" alt="Spirit (OC)" title="Spirit (OC)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1407127813182869505" target="_blank">
-                    <img src="/assets/img/drawings/Isaac.gif" alt="Isaac with Rotten Baby" title="Isaac with Rotten Baby">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1404311335169531904" target="_blank">
-                    <img src="/assets/img/drawings/Head-with-scarf.png" alt="Me with scarf (OC)" title="Me with scarf (OC)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1402817542213836801" target="_blank">
-                    <img src="/assets/img/drawings/NewDream.png" alt="A Bad Dream (Recreation)" title="A Bad Dream (Recreation)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1401034283226218497" target="_blank">
-                    <img src="/assets/img/drawings/Head.png" alt="Me (OC)" title="Me (OC)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1784025612878819737" target="_blank">
-                    <img src="/assets/img/drawings/DylanFanta.png" alt="Dylan (Grape Soda)" title="Dylan (Grape Soda)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1784025612878819737" target="_blank">
-                    <img src="/assets/img/drawings/Cashier.png" alt="Cashier" title="Cashier">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1393398701578670081" target="_blank">
-                    <img src="/assets/img/drawings/Watanoge.png" alt="Watanoge" title="Watanoge">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://www.newgrounds.com/art/view/savandev/madotsuki-yume-nikki" target="_blank">
-                    <img src="/assets/img/drawings/Madotsuki-Reduced.jpg" alt="Madotsuki" title="Madotsuki">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                            <i class="fas fa-square"></i>
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/dylnavas36/status/1386521813753155584" target="_blank">
-                    <img src="/assets/img/drawings/Twitter120.png" alt="Twitter (120 followers!)" title="Twitter (120 followers!)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1784024645345116426" target="_blank">
-                    <img src="/assets/img/drawings/FantaUva.gif" alt="Fanta Uva" title="Fanta Uva">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1783718390151975382" target="_blank">
-                    <img src="/assets/img/drawings/Chibi.png" alt="Chibi" title="Chibi">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1783718226737717277" target="_blank">
-                    <img src="/assets/img/drawings/Coffe.png" alt="Coffe" title="Coffe">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://www.newgrounds.com/art/view/savandev/niko-oneshot" target="_blank">
-                    <img src="/assets/img/drawings/Niko.png" alt="Niko (OneShot)" title="Niko (OneShot)">
-                    <span class="drawing-social">
-                        
-                        
-                        
-                            <i class="fas fa-square"></i>
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1783710096049975717" target="_blank">
-                    <img src="/assets/img/drawings/FriskNeutral.png" alt="Frisk (Neutral)" title="Frisk (Neutral)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1783708166368194660" target="_blank">
-                    <img src="/assets/img/drawings/Frisk.png" alt="Frisk" title="Frisk">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1783708166368194660" target="_blank">
-                    <img src="/assets/img/drawings/Chara.png" alt="Chara" title="Chara">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-                <a class="drawing-post" href="https://twitter.com/PhoenixBlue36/status/1783708166368194660" target="_blank">
-                    <img src="/assets/img/drawings/Dylan.png" alt="Dylan (Genocide)" title="Dylan (Genocide)">
-                    <span class="drawing-social">
-                        
-                        
-                            <i class="fab fa-twitter"></i>
-                        
-                        
-                        
-                    </span>
-                </a>
-            
-        </section>
-    </article>
-    <footer>
-    <p>SavanDev - 2016 / 2024</p>
-</footer>
-<script src="/assets/js/cleanify.js"></script>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--script src="/assets/js/cleanify.js"></script-->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 <script src="/assets/js/index.js"></script>
 
 </body>

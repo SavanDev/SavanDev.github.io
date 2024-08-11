@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="/assets/img/Chesspawn.png">
     <title>Labs - SavanDev</title>
-    <link rel="stylesheet" href="/assets/css/cleanify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link rel="stylesheet" href="/assets/css/cleanify.css"-->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Labs | SavanDev</title>
@@ -14,8 +16,8 @@
 <meta property="og:title" content="Labs" />
 <meta name="author" content="SavanDev" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://savandev.github.io/labs/" />
-<meta property="og:url" content="https://savandev.github.io/labs/" />
+<link rel="canonical" href="https://savandev.ar/labs/" />
+<meta property="og:url" content="https://savandev.ar/labs/" />
 <meta property="og:site_name" content="SavanDev" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
@@ -23,115 +25,197 @@
 <meta name="twitter:site" content="@dylnavas36" />
 <meta name="twitter:creator" content="@SavanDev" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"SavanDev"},"headline":"Labs","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.github.io/assets/img/logo.png"},"name":"SavanDev"},"url":"https://savandev.github.io/labs/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"SavanDev"},"headline":"Labs","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.ar/assets/img/logo.png"},"name":"SavanDev"},"url":"https://savandev.ar/labs/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
-<body dark="1">
-    <nav>
-    <a class="navbar-title" href="/">SavanDev</a>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/squared-logo.svg" alt="SavanDev" width="42">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav col-lg-6">
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/"><i class="bi bi-house"></i> Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/drawings/"><i class="bi bi-brush"></i> Drawings</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/projects/"><i class="bi bi-window-stack"></i> Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a  class="nav-link active" aria-current="page"  href="/labs/"><i class="bi bi-code-square"></i> Labs</a>
+                </li>
+                
+            </ul>
+            <div class="d-lg-flex col-lg-6 justify-content-lg-end">
+                
+                <a class="btn btn-primary" href="https://github.com/SavanDev" role="button" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                
+                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon" class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+
+    </div>
+</nav>
+    <div class="container">
+        <div class="alert alert-warning" role="alert">
+            <i class="bi bi-exclamation-triangle-fill"></i> Warning: In this section you may find projects in an early stage of development and many may even be discarded.
+        </div>
+        <div class="row d-flex flex-wrap align-items-center justify-content-center">
+            
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card mb-3">
+                    <div class="card-header">SD Writer</div>
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center align-content-center mb-2">
+                            
+                            <i class="bi bi-window display-2"></i>
+                            
+                            
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">A Notepad experiment.</p>
+                                <p class="card-text"><b>Version: </b>0.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer hstack gap-3">
+                        <span>Progress:</span>
+                        
+                        <div class="progress w-100" role="progressbar" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                        </div>
+                        
+                        
+                        <a class="btn btn-primary btn-sm" href="https://github.com/SavanDev/Writer" role="button">Download</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card mb-3">
+                    <div class="card-header">Bhaskara</div>
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center align-content-center mb-2">
+                            
+                            <i class="bi bi-window display-2"></i>
+                            
+                            
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">A simple app for calculate Bhaskara.</p>
+                                <p class="card-text"><b>Version: </b>0.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer hstack gap-3">
+                        <span>Progress:</span>
+                        
+                        <div class="progress w-100" role="progressbar" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                        </div>
+                        
+                        
+                        <a class="btn btn-primary btn-sm" href="https://github.com/SavanDev/Bhaskara" role="button">Download</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card mb-3">
+                    <div class="card-header">Assembly Generator</div>
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center align-content-center mb-2">
+                            
+                            <i class="bi bi-window display-2"></i>
+                            
+                            
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">Generate a AssemblyInfo.cs from a GitHub Repository.</p>
+                                <p class="card-text"><b>Version: </b>0.6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer hstack gap-3">
+                        <span>Progress:</span>
+                        
+                        
+                        <div class="progress w-100" role="progressbar" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%">100%</div>
+                        </div>
+                        
+                        <a class="btn btn-primary btn-sm" href="https://github.com/SavanDev/AssemblyGenerator" role="button">Download</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">SavanDev - <b>2016 / 2024</b></span>
+        </div>
     
-        <ul class="navbar-menu">
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://twitter.com/dylnavas36">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </li>
             
-                
-                    <li><a href="/drawings/">Drawings</a></li>
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
             
-                
-            
-                
-                    <li><a href="/labs/">Labs</a></li>
-                
-            
-                
-            
-                
-                    <li><a href="/projects/">Projects</a></li>
-                
-            
-                
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SavanDev">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
             
         </ul>
-    
-    <ul class="navbar-right-menu">
-        
-            <li><a href="https://github.com/SavanDev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-		
-        <!--li><b>Upd:</b> 04/27/24</li-->
-    </ul>
-</nav>
-    <article class="grid fluid">
-        <section class="transparent labsMenu">
-            <h2>Labs</h2>
-            
-                <h5>Games</h5>
-                <ul>
-                    
-                        
-                        <li>
-                            <a href="/games/2023/projectnight/">
-                                Project Night
-                            </a>
-                        </li>
-                        
-                    
-                        
-                        <li>
-                            <a href="/games/2023/baddream/">
-                                Bad Dream
-                            </a>
-                        </li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                </ul>
-            
-                <h5>Web</h5>
-                <ul>
-                    
-                        
-                    
-                </ul>
-            
-                <h5>Programs</h5>
-                <ul>
-                    
-                        
-                    
-                </ul>
-            
-        </section>
-        <section class="dashed">
-            
-
-            <p>Coming soon…</p>
-
-        </section>
-    </article>
-    <footer>
-    <p>SavanDev - 2016 / 2024</p>
-</footer>
-<script src="/assets/js/cleanify.js"></script>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--script src="/assets/js/cleanify.js"></script-->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 <script src="/assets/js/index.js"></script>
 
 </body>

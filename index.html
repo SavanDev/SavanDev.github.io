@@ -1,141 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="/assets/img/Chesspawn.png">
-    <title>Welcome! - SavanDev</title>
-    <link rel="stylesheet" href="/assets/css/cleanify.css">
+    <title>Home - SavanDev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link rel="stylesheet" href="/assets/css/cleanify.css"-->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome! | SavanDev</title>
+<title>Home | SavanDev</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Welcome!" />
+<meta property="og:title" content="Home" />
 <meta name="author" content="SavanDev" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="SavanDev stuff here, all in this page!" />
 <meta property="og:description" content="SavanDev stuff here, all in this page!" />
-<link rel="canonical" href="https://savandev.github.io/" />
-<meta property="og:url" content="https://savandev.github.io/" />
+<link rel="canonical" href="https://savandev.ar/" />
+<meta property="og:url" content="https://savandev.ar/" />
 <meta property="og:site_name" content="SavanDev" />
-<meta property="og:image" content="https://savandev.github.io/assets/img/logo.png" />
+<meta property="og:image" content="https://savandev.ar/assets/img/squared-logo.svg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:image" content="https://savandev.github.io/assets/img/logo.png" />
-<meta property="twitter:title" content="Welcome!" />
+<meta property="twitter:image" content="https://savandev.ar/assets/img/squared-logo.svg" />
+<meta property="twitter:title" content="Home" />
 <meta name="twitter:site" content="@dylnavas36" />
 <meta name="twitter:creator" content="@SavanDev" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"SavanDev"},"description":"SavanDev stuff here, all in this page!","headline":"Welcome!","image":"https://savandev.github.io/assets/img/logo.png","name":"SavanDev","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.github.io/assets/img/logo.png"},"name":"SavanDev"},"sameAs":["https://twitter.com/dylnavas36","https://github.com/SavanDev"],"url":"https://savandev.github.io/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"SavanDev"},"description":"SavanDev stuff here, all in this page!","headline":"Home","image":"https://savandev.ar/assets/img/squared-logo.svg","name":"SavanDev","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://savandev.ar/assets/img/logo.png"},"name":"SavanDev"},"sameAs":["https://twitter.com/dylnavas36","https://github.com/SavanDev"],"url":"https://savandev.ar/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
-<body dark="1">
-	<nav>
-    <a class="navbar-title" href="/">SavanDev</a>
-    
-        <ul class="navbar-menu">
-            
+<body>
+	<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/squared-logo.svg" alt="SavanDev" width="42">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav col-lg-6">
                 
-            
+                <li class="nav-item">
+                    <a  class="nav-link active" aria-current="page"  href="/"><i class="bi bi-house"></i> Home</a>
+                </li>
                 
-                    <li><a href="/drawings/">Drawings</a></li>
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/drawings/"><i class="bi bi-brush"></i> Drawings</a>
+                </li>
                 
-            
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/projects/"><i class="bi bi-window-stack"></i> Projects</a>
+                </li>
                 
-            
+                <li class="nav-item">
+                    <a 
+                        class="nav-link"  href="/labs/"><i class="bi bi-code-square"></i> Labs</a>
+                </li>
                 
-                    <li><a href="/labs/">Labs</a></li>
+            </ul>
+            <div class="d-lg-flex col-lg-6 justify-content-lg-end">
                 
-            
+                <a class="btn btn-primary" href="https://github.com/SavanDev" role="button" target="_blank">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
                 
-            
-                
-                    <li><a href="/projects/">Projects</a></li>
-                
-            
-                
-            
-        </ul>
-    
-    <ul class="navbar-right-menu">
-        
-            <li><a href="https://github.com/SavanDev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-		
-        <!--li><b>Upd:</b> 04/27/24</li-->
-    </ul>
+                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon" class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+
+    </div>
 </nav>
-	<article class="fluid">
-		<section class="center transparent">
-			<img id="logo" src="/assets/img/banner-white.png" alt="Banner">
-		</section>
-		<!--section class="center transparent">
-			<h3>About me</h3>
-			<p>I make pixel art, games, apps and web stuff (like this).</p>
+	<div class="container">
+		<div class="px-4 py-5 my-4 text-center">
+			<img class="d-block mx-auto mb-4" src="/assets/img/squared-logo.svg" width="128">
+			<h1 class="display-5 fw-bold text-body-emphasis">Welcome, I'm Savan!</h1>
+			<div class="col-lg-9 mx-auto">
+				<p>I make pixel art, games, apps and web stuff (like this).</p>
 
 <p><strong>(Visual Studio, Unity 3D, HaxeFlixel, TypeScript)</strong></p>
 
 <p>Actually I live (and born) in Argentina.</p>
 
-			<ol>
-				<li><a href="/labs"><i class="fas fa-flask"></i> Labs</a></li>
-			</ol>
-		</section-->
-	</article>
-	<article class="grid">
-		<section class="labs-button">
-			<a href="/labs"><h4><i class="fas fa-flask"></i> Labs</h4></a>
-		</section>
-		<section class="projects-button">
-			<a href="/projects"><h4><i class="fas fa-layer-group"></i> Projects</h4></a>
-		</section>
-		<section class="drawings-button">
-			<a href="/drawings"><h4><i class="fas fa-palette"></i> Drawings</h4></a>
-		</section>
-	</article>
-	<article class="color-dark grid">
-		<section class="transparent center">
-			<h3>My PC</h3>
-			<p><b>OS:</b> Windows 11 (<b>WSL:</b> Arch Linux)</p>
-			<p><b>CPU:</b> AMD Ryzen 5 1600 AF (3.2 GHz)</p>
-			<p><b>GPU:</b> AMD RX Vega 56 (8 GB)</p>
-			<p><b>RAM:</b> 16 GB DDR4 (3200 MHz)</p>
-			<p><b>Storage:</b> Kingston SNVS500G (M.2)</p>
-		</section>
-		<section class="transparent center">
-			<h3>About me</h3>
-			<p>I make pixel art, games, apps and web stuff (like this).</p>
-
-<p><strong>(Visual Studio, Unity 3D, HaxeFlixel, TypeScript)</strong></p>
-
-<p>Actually I live (and born) in Argentina.</p>
-
-		</section>
-	</article>
-	<article class="fluid">
-		<section class="transparent">
-			<ol class="links">
-				<li><a href="https://cafecito.app/savandev" target="_blank"><i class="fas fa-coffee"></i> Invitame un Cafecito</a></li>
-				<li><a href="https://savandev.itch.io/" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a></li>
-				
-					<li><a href="https://twitter.com/dylnavas36" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-				
-				
-				<li><a href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
-			</ol>
-		</section>
-	</article>
+				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+					<a class="btn btn-primary btn-lg px-4 gap-3" href="https://cafecito.app/savandev" target="_blank" role="button"><i class="bi bi-cup-hot-fill"></i> Invitame un Cafecito
+					</a>
+					<a class="btn btn-outline-secondary btn-lg px-4" href="https://savandev.itch.io/" target="_blank" role="button"><i class="bi bi-joystick"></i> Itch.io</a>
+					
+					<a class="btn btn-outline-secondary btn-lg px-4" href="https://twitter.com/dylnavas36" target="_blank" role="button"><i class="bi bi-twitter-x"></i> Twitter</a>
+					
+					
+					<a class="btn btn-outline-secondary btn-lg px-4" href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank" role="button"><i class="bi bi-youtube"></i> YouTube</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="card mx-auto my-4" style="width: 18rem;">
+					<img src="/assets/img/drawings/NewDylan.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Drawings</h5>
+						<p class="card-text">In this section you will find all the drawings that I have published on my social networks.</p>
+						<a href="/drawings" class="btn btn-primary">Visit it!</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card mx-auto my-4" style="width: 18rem;">
+					<img src="/assets/img/drawings/NewDream.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Projects</h5>
+						<p class="card-text">All the projects I've published over time (games, apps, frameworks, etc.).</p>
+						<a href="/projects" class="btn btn-primary">Visit it!</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card mx-auto my-4" style="width: 18rem;">
+					<img src="/assets/img/drawings/Dream-0007.png" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Labs</h5>
+						<p class="card-text">Projects in early stages of development, experiments and ideas/concepts for the future.</p>
+						<a href="/labs" class="btn btn-primary">Visit it!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="accordion" id="accordionPC">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+						aria-expanded="true" aria-controls="collapseOne">
+						My PC
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPC">
+					<div class="accordion-body">
+						<p><b>OS:</b> Windows 11 (<b>WSL:</b> Arch Linux)</p>
+						<p><b>CPU:</b> AMD Ryzen 5 1600 AF (3.2 GHz)</p>
+						<p><b>GPU:</b> AMD RX Vega 56 (8 GB)</p>
+						<p><b>RAM:</b> 16 GB DDR4 (3200 MHz)</p>
+						<p><b>Storage:</b> Kingston SNVS500G (M.2)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--article class="transparent center">
 		<section class="dashed">
 			<h2>More coming soon...</h2>
 		</section>
 	</article-->
-	<footer>
-    <p>SavanDev - 2016 / 2024</p>
-</footer>
-<script src="/assets/js/cleanify.js"></script>
+	<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">SavanDev - <b>2016 / 2024</b></span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://twitter.com/dylnavas36">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </li>
+            
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+            
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SavanDev">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            
+        </ul>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--script src="/assets/js/cleanify.js"></script-->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 <script src="/assets/js/index.js"></script>
 
 </body>
