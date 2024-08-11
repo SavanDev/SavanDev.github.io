@@ -1,6 +1,6 @@
-- name: Cleanify Design
+- name: Minecraft Avatar in PHP
   languages: ['English']
-  version: 2.2
-  imageUrl: /assets/img/cleanify.svg
-  url: https://savandev.ar/cleanify-design/
+  version: 1.0
+  imageUrl: https://crafatar.com/avatars/cd6afb44e94c4d6280d2f2aebafc5f7b
+  url: https://github.com/SavanDev/Minecraft-Avatar-in-PHP
   platform: ["web"]

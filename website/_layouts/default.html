@@ -33,8 +33,7 @@
 					<img src="{{ "/assets/img/drawings/NewDylan.png" | relative_url }}" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">Drawings</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-							content.</p>
+						<p class="card-text">In this section you will find all the drawings that I have published on my social networks.</p>
 						<a href="{{ "/drawings" | relative_url }}" class="btn btn-primary">Visit it!</a>
 					</div>
 				</div>
@@ -44,8 +43,7 @@
 					<img src="{{ "/assets/img/drawings/NewDream.png" | relative_url }}" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">Projects</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-							content.</p>
+						<p class="card-text">All the projects I've published over time (games, apps, frameworks, etc.).</p>
 						<a href="{{ "/projects" | relative_url }}" class="btn btn-primary">Visit it!</a>
 					</div>
 				</div>
@@ -55,8 +53,7 @@
 					<img src="{{ "/assets/img/drawings/Dream-0007.png" | relative_url }}" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">Labs</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-							content.</p>
+						<p class="card-text">Projects in early stages of development, experiments and ideas/concepts for the future.</p>
 						<a href="{{ "/labs" | relative_url }}" class="btn btn-primary">Visit it!</a>
 					</div>
 				</div>
@@ -64,7 +61,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="accordion" id="accordionExample">
+		<div class="accordion" id="accordionPC">
 			<div class="accordion-item">
 				<h2 class="accordion-header">
 					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -72,30 +69,13 @@
 						My PC
 					</button>
 				</h2>
-				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPC">
 					<div class="accordion-body">
 						<p><b>OS:</b> {{ page.os }}</p>
 						<p><b>CPU:</b> {{ page.cpu }}</p>
 						<p><b>GPU:</b> {{ page.gpu }}</p>
 						<p><b>RAM:</b> {{ page.ram }}</p>
 						<p><b>Storage:</b> {{ page.storage }}</p>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-						data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						Accordion Item #2
-					</button>
-				</h2>
-				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-					<div class="accordion-body">
-						<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-						plugin adds the appropriate classes that we use to style each element. These classes control the overall
-						appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-						custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-						within the <code>.accordion-body</code>, though the transition does limit overflow.
 					</div>
 				</div>
 			</div>

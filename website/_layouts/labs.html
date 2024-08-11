@@ -9,8 +9,49 @@
         <div class="alert alert-warning" role="alert">
             <i class="bi bi-exclamation-triangle-fill"></i> Warning: In this section you may find projects in an early stage of development and many may even be discarded.
         </div>
-        <div class="alert alert-primary" role="alert">
-            {{ content }}
+        <div class="row d-flex flex-wrap align-items-center justify-content-center">
+            {% for item in site.data.labs %}
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card mb-3">
+                    <div class="card-header">{{ item.name }}</div>
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center align-content-center mb-2">
+                            {% if item.category == "app" %}
+                            <i class="bi bi-window display-2"></i>
+                            {% endif %}
+                            {% if item.category == "game" %}
+                            <i class="bi bi-controller display-2"></i>
+                            {% endif %}
+                            {% if item.category == "web" %}
+                            <i class="bi bi-browser-firefox display-2"></i>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">{{ item.description }}</p>
+                                <p class="card-text"><b>Version: </b>{{ item.version }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer hstack gap-3">
+                        <span>Progress:</span>
+                        {% if item.progress < 0 %}
+                        <div class="progress w-100" role="progressbar" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                        </div>
+                        {% endif %}
+                        {% if item.progress >= 0 %}
+                        <div class="progress w-100" role="progressbar" aria-valuenow="{{ item.progress }}"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: {{ item.progress }}%">{{ item.progress }}%</div>
+                        </div>
+                        {% endif %}
+                        <a class="btn btn-primary btn-sm" href="{{ item.url }}" role="button">Download</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
     {% include footer.html %}

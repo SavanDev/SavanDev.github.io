@@ -1,0 +1,20 @@
+- name: SD Writer
+  description: A Notepad experiment.
+  version: 0.1
+  url: https://github.com/SavanDev/Writer
+  category: app
+  progress: -1
+
+- name: Bhaskara
+  description: A simple app for calculate Bhaskara.
+  version: 0.1
+  url: https://github.com/SavanDev/Bhaskara
+  category: app
+  progress: -1
+
+- name: Assembly Generator
+  description: Generate a AssemblyInfo.cs from a GitHub Repository.
+  version: 0.6
+  url: https://github.com/SavanDev/AssemblyGenerator
+  category: app
+  progress: 100
