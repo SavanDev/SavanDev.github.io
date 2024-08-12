@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}" data-bs-theme="dark">
+
+{% include head.html %}
+
+<body>
+	{% include navbar.html %}
+	<div class="container">
+		<h1 class="display-2">{{ page.title }}</h1>
+		<p class="lead">
+			Published on: <b>{{ page.date | date: "%-d %B %Y" }}</b>
+		</p>
+		<div class="container">
+			{{ content }}
+		</div>
+	</div>
+	{% include footer.html %}
+</body>
+
+</html>

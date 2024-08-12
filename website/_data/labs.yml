@@ -18,3 +18,10 @@
   url: https://github.com/SavanDev/AssemblyGenerator
   category: app
   progress: 100
+
+- name: Blog
+  description: Publications and news on the website!
+  version: 0.1
+  url: /blog
+  category: web
+  progress: 0

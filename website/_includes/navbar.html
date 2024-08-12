@@ -12,9 +12,19 @@
                 {% for nav in site.data.navigation %}
                 <li class="nav-item">
                     <a {% if nav.url==page.url %} class="nav-link active" aria-current="page" {% else %}
-                        class="nav-link" {% endif %} href="{{ nav.url | relative_url }}"><i class="bi bi-{{ nav.icon }}"></i> {{ nav.text }}</a>
+                        class="nav-link" {% endif %} href="{{ nav.url | relative_url }}">
+                        <i class="bi bi-{{ nav.icon }}"></i> {{ nav.text }}
+                    </a>
                 </li>
                 {% endfor %}
+                {% if page.url == "/blog/" %}
+                <!-- Blog experiment -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ '/posts/' | relative_url }}">
+                        <i class="bi bi-substack"></i> Blog
+                    </a>
+                </li>
+                {% endif %}
             </ul>
             <div class="d-lg-flex col-lg-6 justify-content-lg-end">
                 {% if site.github %}
