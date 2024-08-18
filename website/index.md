@@ -13,7 +13,7 @@ storage: Kingston SNVS500G (M.2)
 mainTitle: Hola, soy Savan!
 ---
 
-Me apasiona crear pixel-art, desarrollar videojuegos inmersivos, aplicaciones intuitivas y sitios web dinámicos (como este).
+Me apasiona crear pixel-art, desarrollar videojuegos inmersivos, aplicaciones intuitivas y sitios web de todo tipo.
 
 Sé utilizar **Visual Studio (_C#, Visual Basic_)**, **Unity 3D (_C#_)**, **HaxeFlixel**, **TypeScript** y **React**.
 
