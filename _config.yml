@@ -1,6 +1,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 title: Savan # the name of your site, e.g. ACME Corp.
 author: SavanDev
+lang: es
 
 source: website
 
@@ -8,7 +9,7 @@ permalink: /:categories/:year/:title/
 
 exclude:
   - "webpack.config.js"
-  
+
 include:
   - ".well-known"
   - ".nojekyll"

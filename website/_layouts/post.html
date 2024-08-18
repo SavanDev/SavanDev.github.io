@@ -5,16 +5,18 @@
 
 <body>
 	{% include navbar.html %}
-	<div class="container">
-		<h1 class="display-2">{{ page.title }}</h1>
-		<p class="lead">
-			Published on: <b>{{ page.date | date: "%-d %B %Y" }}</b>
-		</p>
+	<main>
 		<div class="container">
-			{{ content }}
+			<h1 class="display-2">{{ page.title }}</h1>
+			<p class="lead">
+				Publicado el <b>{{ page.date | date: "%-d %B %Y" }}</b>
+			</p>
+			<div class="container">
+				{{ content }}
+			</div>
 		</div>
-	</div>
-	{% include footer.html %}
+		{% include footer.html %}
+	</main>
 </body>
 
 </html>

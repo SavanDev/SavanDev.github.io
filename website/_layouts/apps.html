@@ -5,77 +5,81 @@
 
 <body>
     {% include navbar.html %}
-    <div class="container">
-        <div class="accordion" id="accordionFlushList">
-            {% for category in site.data.projects %}
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-{{ category[0] }}" aria-expanded="false" aria-controls="flush-{{ category[0] }}">
-                        {{ category[0] }}
-                    </button>
-                </h2>
-                <div id="flush-{{ category[0] }}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushList">
-                    <div class="accordion-body">
-                        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-                            {% for page in category[1] %}
-                            <div class="col">
-                                <div class="card mb-2 mx-auto appCard">
-                                    <div class="row g-0">
-                                        <div class="col-md-4 text-center">
-                                            <a href="{{ page.url | relative_url }}">
-                                                <img src="{{ page.imageUrl | relative_url }}" class="img-fluid rounded-start appImg"
-                                                    alt="{{ page.name }}">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-8 appContent">
-                                            <div class="card-body clearfix">
-                                                <h5 class="card-title mb-1">{{ page.name }}</h5>
-                                                <p class="card-text mb-1">
-                                                    <b>Languages: </b>
-                                                    {% for item in page.languages %}
-                                                    <span class="badge text-bg-secondary">{{ item }}</span>
-                                                    {% endfor %}
-                                                    <br />
-                                                    <b>Version: </b>
-                                                    <span class="badge text-bg-secondary">{{ page.version }}</span>
-                                                </p>
-                                                <a href="{{ page.url | relative_url }}" class="btn btn-primary btn-sm">Visit it!</a>
+    <main>
+        <div class="container">
+            <div class="accordion" id="accordionFlushList">
+                {% for category in site.data.projects %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-capitalize" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-{{ category[0] }}" aria-expanded="false"
+                            aria-controls="flush-{{ category[0] }}">
+                            {{ category[0] }}
+                        </button>
+                    </h2>
+                    <div id="flush-{{ category[0] }}" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushList">
+                        <div class="accordion-body">
+                            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                                {% for page in category[1] %}
+                                <div class="col">
+                                    <div class="card mb-2 mx-auto appCard">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 text-center">
+                                                <a href="{{ page.url | relative_url }}">
+                                                    <img src="{{ page.imageUrl | relative_url }}"
+                                                        class="img-fluid rounded-start appImg" alt="{{ page.name }}">
+                                                </a>
                                             </div>
-                                            <div class="card-footer text-body-secondary appFooter">
-                                                Available for
-                                                {% for item in page.platform %}
-                                                {% if item == "windows" %}
-                                                <i class="fab fa-windows"></i>
-                                                {% endif %}
-                                                {% if item == "linux" %}
-                                                <i class="fab fa-linux"></i>
-                                                {% endif %}
-                                                {% if item == "mac" %}
-                                                <i class="fab fa-apple"></i>
-                                                {% endif %}
-                                                {% if item == "web" %}
-                                                <i class="fab fa-firefox"></i>
-                                                <i class="fab fa-chrome"></i>
-                                                <i class="fab fa-edge"></i>
-                                                {% endif %}
-                                                {% if item == "android" %}
-                                                <i class="fab fa-android"></i>
-                                                {% endif %}
-                                                {% endfor %}
+                                            <div class="col-md-8 appContent">
+                                                <div class="card-body clearfix">
+                                                    <h5 class="card-title mb-1">{{ page.name }}</h5>
+                                                    <p class="card-text mb-1">
+                                                        <b>Idiomas: </b>
+                                                        {% for item in page.languages %}
+                                                        <span class="badge text-bg-secondary">{{ item }}</span>
+                                                        {% endfor %}
+                                                        <br />
+                                                        <b>Versión: </b>
+                                                        <span class="badge text-bg-secondary">{{ page.version }}</span>
+                                                    </p>
+                                                    <a href="{{ page.url | relative_url }}"
+                                                        class="btn btn-primary btn-sm">Explorar</a>
+                                                </div>
+                                                <div class="card-footer text-body-secondary appFooter">
+                                                    Disponible para
+                                                    {% for item in page.platform %}
+                                                    {% if item == "windows" %}
+                                                    <i class="fab fa-windows"></i>
+                                                    {% endif %}
+                                                    {% if item == "linux" %}
+                                                    <i class="fab fa-linux"></i>
+                                                    {% endif %}
+                                                    {% if item == "mac" %}
+                                                    <i class="fab fa-apple"></i>
+                                                    {% endif %}
+                                                    {% if item == "web" %}
+                                                    <i class="fab fa-firefox"></i>
+                                                    <i class="fab fa-chrome"></i>
+                                                    <i class="fab fa-edge"></i>
+                                                    {% endif %}
+                                                    {% if item == "android" %}
+                                                    <i class="fab fa-android"></i>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
-                            {% endfor %}
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-        <!--h1 id="{{ category[0] }}" class="display-5 text-center text-capitalize">{{ category[0] }}</h1>
+            <!--h1 id="{{ category[0] }}" class="display-5 text-center text-capitalize">{{ category[0] }}</h1>
         <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
             {% for page in category[1] %}
             <div class="col">
@@ -136,8 +140,9 @@
                 {% endfor %}
             </ul>
         </nav-->
-    </div>
-    {% include footer.html %}
+        </div>
+        {% include footer.html %}
+    </main>
 </body>
 
 </html>

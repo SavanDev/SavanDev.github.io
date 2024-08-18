@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary mb-4">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="{{ "/assets/img/squared-logo.svg" | relative_url }}" alt="SavanDev" width="42">
+            <img src="{{ '/assets/img/squared-logo.svg' | relative_url }}" alt="SavanDev" width="42">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
                 {% if page.url == "/blog/" %}
                 <!-- Blog experiment -->
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ '/posts/' | relative_url }}">
+                    <a class="nav-link active" aria-current="page" href="{{ '/blog/' | relative_url }}">
                         <i class="bi bi-substack"></i> Blog
                     </a>
                 </li>
@@ -32,7 +32,8 @@
                     <i class="bi bi-github"></i> GitHub
                 </a>
                 {% endif %}
-                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon" class="bi bi-moon-fill"></i></button>
+                <button id="btnSwitch" type="button" class="btn btn-outline-secondary ms-2"><i id="btnSwitchIcon"
+                        class="bi bi-moon-fill"></i></button>
             </div>
         </div>
 

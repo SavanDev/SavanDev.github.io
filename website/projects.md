@@ -1,6 +1,6 @@
 ---
 layout: apps
-title: Projects
-description: All the projects I've published over time (games, apps, frameworks, etc.).
+title: Proyectos
+description: Todos los proyectos que he publicado a lo largo del tiempo (videojuegos, aplicaciones, etc)
 image: /assets/img/drawings/NewDream.png
 ---

@@ -1,12 +1,12 @@
-- text: Home
+- text: Inicio
   url: /
   icon: house
 
-- text: Drawings
+- text: Dibujos
   url: /drawings/
   icon: brush
 
-- text: Projects
+- text: Proyectos
   url: /projects/
   icon: window-stack
 

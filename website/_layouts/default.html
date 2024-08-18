@@ -5,88 +5,106 @@
 
 <body>
 	{% include navbar.html %}
-	<div class="container">
-		<div class="px-4 py-5 my-4 text-center">
-			<img class="d-block mx-auto mb-4" src="{{ page.image | relative_url }}" width="128">
-			<h1 class="display-5 fw-bold text-body-emphasis">Welcome, I'm Savan!</h1>
-			<div class="col-lg-9 mx-auto">
-				{{ content }}
-				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-					<a class="btn btn-primary btn-lg px-4 gap-3" href="https://cafecito.app/savandev" target="_blank" role="button"><i class="bi bi-cup-hot-fill"></i> Invitame un Cafecito
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm my-auto">
+					<img class="d-block mx-auto mb-4 w-50" src="{{ page.image | relative_url }}">
+				</div>
+				<div class="col-sm text-center my-auto">
+					<h1 class="display-5 fw-bold text-body-emphasis">{{ page.mainTitle }}</h1>
+					{{ content }}
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-sm">
+					<a class="btn btn-primary btn-lg px-4 mb-2" href="https://cafecito.app/savandev" target="_blank"
+						role="button"><i class="bi bi-cup-hot-fill"></i> Invitame un Cafecito
 					</a>
-					<a class="btn btn-outline-secondary btn-lg px-4" href="https://savandev.itch.io/" target="_blank" role="button"><i class="bi bi-joystick"></i> Itch.io</a>
-					{% if site.twitter %}
-					<a class="btn btn-outline-secondary btn-lg px-4" href="https://twitter.com/{{ site.twitter:username }}" target="_blank" role="button"><i class="bi bi-twitter-x"></i> Twitter</a>
-					{% endif %}
-					{% if site.instagram %}
-					<a class="btn btn-outline-secondary btn-lg px-4" href="https://instagram.com/{{ site.instagram }}" target="_blank" role="button"><i class="bi bi-instagram"></i> Instagram</a>
-					{% endif %}
-					<a class="btn btn-outline-secondary btn-lg px-4" href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank" role="button"><i class="bi bi-youtube"></i> YouTube</a>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="card mx-auto my-4" style="width: 18rem;">
-					<img src="{{ "/assets/img/drawings/NewDylan.png" | relative_url }}" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Drawings</h5>
-						<p class="card-text">In this section you will find all the drawings that I have published on my social networks.</p>
-						<a href="{{ "/drawings" | relative_url }}" class="btn btn-primary">Visit it!</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card mx-auto my-4" style="width: 18rem;">
-					<img src="{{ "/assets/img/drawings/NewDream.png" | relative_url }}" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Projects</h5>
-						<p class="card-text">All the projects I've published over time (games, apps, frameworks, etc.).</p>
-						<a href="{{ "/projects" | relative_url }}" class="btn btn-primary">Visit it!</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card mx-auto my-4" style="width: 18rem;">
-					<img src="{{ "/assets/img/drawings/Dream-0007.png" | relative_url }}" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Labs</h5>
-						<p class="card-text">Projects in early stages of development, experiments and ideas/concepts for the future.</p>
-						<a href="{{ "/labs" | relative_url }}" class="btn btn-primary">Visit it!</a>
+				<div class="col-sm">
+					<div class="d-flex gap-2 justify-content-center">
+						<a class="btn btn-outline-info" href="https://savandev.itch.io/" target="_blank"
+							role="button"><i class="bi bi-joystick"></i> Itch.io</a>
+						{% if site.twitter %}
+						<a class="btn btn-outline-light" href="https://twitter.com/{{ site.twitter:username }}"
+							target="_blank" role="button"><i class="bi bi-twitter-x"></i> Twitter</a>
+						{% endif %}
+						{% if site.instagram %}
+						<a class="btn btn-secondary" href="https://instagram.com/{{ site.instagram }}" target="_blank"
+							role="button"><i class="bi bi-instagram"></i> Instagram</a>
+						{% endif %}
+						<a class="btn btn-outline-danger"
+							href="https://www.youtube.com/channel/UCIMHuQHSK7b7ZbAL0ItSfZg" target="_blank"
+							role="button"><i class="bi bi-youtube"></i> YouTube</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="accordion" id="accordionPC">
-			<div class="accordion-item">
-				<h2 class="accordion-header">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-						aria-expanded="true" aria-controls="collapseOne">
-						My PC
-					</button>
-				</h2>
-				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPC">
-					<div class="accordion-body">
-						<p><b>OS:</b> {{ page.os }}</p>
-						<p><b>CPU:</b> {{ page.cpu }}</p>
-						<p><b>GPU:</b> {{ page.gpu }}</p>
-						<p><b>RAM:</b> {{ page.ram }}</p>
-						<p><b>Storage:</b> {{ page.storage }}</p>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card mx-auto my-4" style="width: 18rem;">
+						<img src="{{ '/assets/img/drawings/NewDylan.png' | relative_url }}" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Dibujos</h5>
+							<p class="card-text">En esta sección encontrarás todos los dibujos que he hecho y subido a
+								mis
+								redes sociales.</p>
+							<a href="{{ '/drawings' | relative_url }}" class="btn btn-primary">¡Ven a verlos!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card mx-auto my-4" style="width: 18rem;">
+						<img src="{{ '/assets/img/drawings/NewDream.png' | relative_url }}" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Proyectos</h5>
+							<p class="card-text">Todos los proyectos que he publicado a lo largo del tiempo
+								(videojuegos,
+								aplicaciones, etc)
+							</p>
+							<a href="{{ '/projects' | relative_url }}" class="btn btn-info">Ver listado</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card mx-auto my-4" style="width: 18rem;">
+						<img src="{{ '/assets/img/drawings/Dream-0007.png' | relative_url }}" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">Labs</h5>
+							<p class="card-text">Proyectos en etapa temprana de desarrollo, experimentos e
+								ideas/conceptos
+								para el futuro.</p>
+							<a href="{{ '/labs' | relative_url }}" class="btn btn-warning">Explorar</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--article class="transparent center">
-		<section class="dashed">
-			<h2>More coming soon...</h2>
-		</section>
-	</article-->
-	{% include footer.html %}
+		<div class="container">
+			<div class="accordion" id="accordionPC">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Especificaciones de mi PC
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPC">
+						<div class="accordion-body">
+							<p><b>SO:</b> {{ page.os }}</p>
+							<p><b>CPU:</b> {{ page.cpu }}</p>
+							<p><b>GPU:</b> {{ page.gpu }}</p>
+							<p><b>RAM:</b> {{ page.ram }}</p>
+							<p><b>Almacenamiento:</b> {{ page.storage }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% include footer.html %}
+	</main>
 </body>
 
 </html>

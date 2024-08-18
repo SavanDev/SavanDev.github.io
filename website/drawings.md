@@ -1,6 +1,6 @@
 ---
 layout: drawings
-title: Drawings
-description: In this section you will find all the drawings that I have published on my social networks.
+title: Dibujos
+description: En esta sección encontrarás todos los dibujos que he hecho y subido a mis redes sociales.
 image: /assets/img/drawings/NewDylan.png
 ---

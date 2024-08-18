@@ -24,4 +24,11 @@
   version: 0.1
   url: /blog
   category: web
-  progress: 0
+  progress: 10
+
+- name: Finanzas
+  description: Javascript experiment.
+  version: 0.1
+  url: /finanzas
+  category: web
+  progress: 5
