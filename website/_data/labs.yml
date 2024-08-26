@@ -24,11 +24,11 @@
   version: 0.1
   url: /blog
   category: web
-  progress: 10
+  progress: 15
 
 - name: Finanzas
-  description: Javascript experiment.
+  description: Sitio web para explorar los diferentes valores financieros de Argentina.
   version: 0.1
   url: /finanzas
   category: web
-  progress: 5
+  progress: 30

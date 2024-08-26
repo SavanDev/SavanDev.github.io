@@ -17,9 +17,9 @@
 				<div class="card-body">
 					<h5 class="card-title">{{ post.title }}</h5>
 					<p class="card-text">
-						Published on: <b>{{ post.date | date: "%-d %B %Y" }}</b>
+						Publicado el <b>{{ post.date | date: "%-d %B %Y" }}</b>
 					</p>
-					<a href="{{ post.url }}" class="btn btn-primary">View post</a>
+					<a href="{{ post.url }}" class="btn btn-primary">Ver publicación</a>
 				</div>
 			</div>
 			{% endfor %}
